@@ -31,6 +31,9 @@ const SocialLink = styled.a`
 const CopyrightText = tw.p`text-center mt-4 font-medium tracking-wide text-lg text-gray-500`
 const Credits = tw.p`text-center mt-10 font-medium tracking-wide text-lg text-gray-500`
 
+const Planit = tw.a`text-green-400`
+const ACT = tw.a`text-yellow-300`
+
 export default () => {
   return (
     <Container>
@@ -59,7 +62,12 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright <br></br><strong><a target="_blank" href="https://akanksha.1ngo.in/" tw="text-yellow-500">Akanksha Charitable Trust</a></strong>.<br></br> All Rights Reserved.            
+            &copy; Copyright <br></br>
+            <strong>
+              <ACT>
+                <a target="_blank" href="https://akanksha.1ngo.in/" tw="text-yellow-500">Akanksha Charitable Trust</a>
+              </ACT>
+            </strong>.<br></br> All Rights Reserved.                            
           </CopyrightText>
           <LogoContainer>
             <a target="_blank" href="https://akanksha.1ngo.in/">
@@ -67,7 +75,9 @@ export default () => {
             </a>
           </LogoContainer>
           <Credits>
-          <strong> Designed & Developed by <a target="_blank" href="https://planit4future.netlify.app/" tw="text-green-500"><i>Plan<sub>i</sub></i>T</a></strong>         
+          <strong> Designed & Developed by 
+            <Planit><a target="_blank" href="https://planit4future.netlify.app/"><i>Plan<sub>i</sub></i>T</a></Planit>
+          </strong>         
           </Credits>
           <LogoContainer>
             <a target="_blank" href="https://planit4future.netlify.app/">

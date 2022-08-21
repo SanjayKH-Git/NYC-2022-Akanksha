@@ -45,7 +45,7 @@ const TextContainer = styled.div(props => [
 
 const Subheading = tw(SubheadingBase)`mb-4`;
 const HeadingTitle = tw(SectionHeading)`lg:text-left leading-tight`;
-const Description = tw.p`max-w-md text-center mx-auto lg:mx-0 lg:text-left lg:max-w-none leading-relaxed text-sm sm:text-base lg:text-lg font-medium mt-4 text-secondary-100`;
+const Description = tw.p`max-w-md text-justify mx-auto lg:mx-0 lg:text-left lg:max-w-none leading-relaxed text-sm sm:text-base lg:text-lg font-medium mt-4 text-secondary-100`;
 
 const QuoteContainer = tw.div`relative mt-10 lg:mt-20`;
 const Quote = tw.blockquote`text-center lg:text-left text-sm sm:text-lg lg:text-xl xl:text-2xl`;
@@ -68,7 +68,7 @@ const DecoratorBlob2 = tw(
 export default ({
   subheading = "",
   heading = "Testimonials",
-  description = "Here are what some of our amazing customers are saying about our hotels & tours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "NYC 2020 has been a milestone in actualizing an endeavor of contributing my part to society and a life-changing experience. The verisimilitude and possibility of SDG hackathon inspired our project ”Threedhara”   and it became a reality. All glory to ACT.",
   testimonials = null,
   textOnLeft = false
 }) => {
@@ -81,7 +81,7 @@ export default ({
       imageSrc:
         "https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80",
       profileImageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+        "../../images/Testimonials/Dipya.jpeg",
       quote:
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
       customerName: "Charlotte Hale",

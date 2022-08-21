@@ -30,13 +30,13 @@ export default () => (
           Our Participants <span tw="text-primary-500">Feedbacks</span>
         </>
       }
-      description="Here are what some of our amazing customers are saying about our marketing professionals. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      description="NYC 2020 has been a milestone in actualizing an endeavor of contributing my part to society and a life-changing experience. The verisimilitude and possibility of SDG hackathon inspired our project ”Threedhara”   and it became a reality. All glory to ACT."
       testimonials={[
         {
           imageSrc:
             "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
           profileImageSrc:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+            "../../images/Testimonials/Dipya.jpeg",
           quote:
             "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
           customerName: "Charlotte Hale",
