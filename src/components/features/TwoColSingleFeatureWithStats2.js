@@ -10,7 +10,7 @@ import { ReactComponent as SvgDotPattern } from "images/dot-pattern.svg";
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
-const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto relative`;
+const ImageColumn = tw(Column)`md:w-5/12 flex-shrink-0 h-80 md:h-auto relative `;
 const TextColumn = styled(Column)(props => [
   tw`md:w-7/12 mt-16 md:mt-0`,
   props.textOnLeft ? tw`md:mr-12 lg:mr-16 md:order-first` : tw`md:ml-12 lg:ml-16 md:order-last`
@@ -49,7 +49,7 @@ export default ({
   description = "An investment in knowledge always pays the best interest. Education helps improve the knowledge and unfortunately, in India we have many children who have been deprived of the quality education due to various reasons. Akanksha was idea of a group of friends who believed that \"Knowledge never decreases by being shared\" and wanted to help the children of rural government schools in getting good education and they lack the necessary knowledge. Team Akansha started its journey in 2012 and was brought under the banner of Akanksha Charitable Trust in 2014. An initiative started by a group of friends is now a strong team of 172 volunteers who come with similar thoughts of sharing the knowledge to children and helping them secure a bright future. Akanksha Charitable Trust is now also striving towards enhancing the skills of the youth and making them capable enough to be career oriented and reach their aspirations. Activities conducted include National Youth Conference, Regional Youth Conference, internship programmes, hands on workshop and so on. Akanksha Charitable Trust has been helping the children and youth of Dakshina Kannada and Udupi districts all these and is striving hard to reach out to more and more needy students.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://akanksha.1ngo.in/",
-  imageSrc = "https://goyes.akankshatrust.in/assets/img/AkankshaLogoAnimation.gif",
+  imageSrc = "https://goyes.akankshatrust.in/assets/img/WBG%20png.png",
   imageCss = null,
   imageContainerCss = null,
   imageDecoratorBlob = false,
@@ -63,15 +63,15 @@ export default ({
   const defaultStatistics = [
     {
       key: "Volunteers",
-      value: " 170+"
+      value: " 180+"
     },
     {
-      key: "Projects",
-      value: "3891+"
+      key: "beneficiaries",
+      value: "20000+"
     },
     {
       key: "Events",
-      value: "1000+"
+      value: "200+"
     }
   ];
 

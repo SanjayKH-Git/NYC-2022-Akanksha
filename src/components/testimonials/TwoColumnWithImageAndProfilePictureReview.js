@@ -14,6 +14,7 @@ import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-
 
 import "slick-carousel/slick/slick.css";
 
+
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const TestimonialsContainer = tw.div`mt-16 lg:mt-0`;
@@ -27,7 +28,7 @@ const TestimonialText = tw.div`outline-none`;
 const ImageAndControlContainer = tw.div`relative outline-none`;
 const Image = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
-  tw`rounded bg-cover bg-center h-80 sm:h-96 lg:h-144`
+  tw`rounded-lg bg-cover bg-center h-80 sm:h-96 lg:h-144`
 ]);
 
 const ControlContainer = tw.div`absolute bottom-0 right-0 bg-gray-100 px-6 py-4 rounded-tl-3xl border`;
@@ -48,7 +49,7 @@ const HeadingTitle = tw(SectionHeading)`lg:text-left leading-tight`;
 const Description = tw.p`max-w-md text-justify mx-auto lg:mx-0 lg:text-left lg:max-w-none leading-relaxed text-sm sm:text-base lg:text-lg font-medium mt-4 text-secondary-100`;
 
 const QuoteContainer = tw.div`relative mt-10 lg:mt-20`;
-const Quote = tw.blockquote`text-center lg:text-left text-sm sm:text-lg lg:text-xl xl:text-2xl`;
+const Quote = tw.blockquote`text-justify lg:text-left text-sm sm:text-lg lg:text-xl xl:text-2xl`;
 const CustomerInfo = tw.div`mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start`;
 const CustomerProfilePicture = tw.img`rounded-full w-20 h-20`;
 const CustomerTextInfo = tw.div`text-center lg:text-left sm:ml-6 mt-2 sm:mt-0`;
@@ -78,10 +79,8 @@ export default ({
    */
   const defaultTestimonials = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80",
-      profileImageSrc:
-        "../../images/Testimonials/Dipya.jpeg",
+      imageSrc: "../../images/Testimonials/Deep kakkad.jpg",
+      profileImageSrc: require("../../images/Testimonials/Deep kakkad.jpg"),
       quote:
         "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
       customerName: "Charlotte Hale",

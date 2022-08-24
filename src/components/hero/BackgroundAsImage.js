@@ -6,6 +6,9 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
+import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
+
+
 const StyledHeader = styled(Header)`
   ${tw`pt-8 max-w-none`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
@@ -61,10 +64,10 @@ const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
+      <NavLink href="">
         About
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="MainFeature">
         ACT Events
       </NavLink>
       <NavLink href="#">
@@ -75,7 +78,7 @@ export default () => {
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/#">
+      <PrimaryLink target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc0LwtYHm7Fl3NEgMGRcuRINRA9q6quRRRjW9jDY3UTxK7gPw/viewform?usp=sf_link">
         Apply Now
       </PrimaryLink>
     </NavLinks>
@@ -98,7 +101,9 @@ export default () => {
 
               <SlantedBackground >NATIONAL YOUTH CONFERENCE 2022.</SlantedBackground>
             </Heading>
+            <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc0LwtYHm7Fl3NEgMGRcuRINRA9q6quRRRjW9jDY3UTxK7gPw/viewform?usp=sf_link">
             <PrimaryAction>Register Now</PrimaryAction>
+            </a>
           </LeftColumn>
           <RightColumn>
             <StyledResponsiveVideoEmbed              
