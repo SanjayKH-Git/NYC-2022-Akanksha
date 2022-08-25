@@ -10,7 +10,7 @@ import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
 
 
 const StyledHeader = styled(Header)`
-  ${tw`pt-8 max-w-none`}
+  ${tw`pt-2 max-w-none`}
   ${DesktopNavLinks} ${NavLink}, ${LogoLink} {
     ${tw`text-gray-100 hover:border-gray-300 hover:text-gray-300`}
   }
@@ -26,12 +26,12 @@ const Container = styled.div`
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-primary-500 opacity-25`;
 
 const HeroContainer = tw.div`z-20 relative px-4 sm:px-8 max-w-screen-xl mx-auto`;
-const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
+const TwoColumn = tw.div`pt-2 pb-64 px-4 flex justify-between items-center flex-col lg:flex-row`;
 const LeftColumn = tw.div`flex flex-col items-center lg:block`;
-const RightColumn = tw.div`w-full sm:w-5/6 lg:w-1/2 mt-16 lg:mt-0 lg:pl-8`;
+const RightColumn = tw.div`w-full sm:w-11/12 lg:w-4/5 mt-12 lg:mt-0 lg:pl-12 lg:pt-2`;
 
 const Heading = styled.h1`
-  ${tw`text-3xl text-center lg:text-left sm:text-4xl lg:text-5xl xl:text-6xl font-black text-yellow-400 leading-none`}
+  ${tw`text-2xl text-center lg:text-center sm:text-3xl lg:text-4xl xl:text-4xl font-black text-yellow-400 leading-none`}
   h4{
     ${tw`text-xl text-blue-400`}
   }
@@ -94,10 +94,8 @@ export default () => {
             <Notification>We are Launching Exclusive Event of 2022.</Notification>
             <Heading >
               <span>Akanksha Charitable Trust [ACT]</span>
-              <br />
-            
-              <h4 style={{"text-align":"auto", color:"rgb(0, 187, 255);"}}> Presents </h4>
-              
+                            
+              <h4 style={{"text-align":"auto", color:"rgb(0, 187, 255);", "padding":"10px"}}> Presents </h4>              
 
               <SlantedBackground >NATIONAL YOUTH CONFERENCE 2022.</SlantedBackground>
             </Heading>
