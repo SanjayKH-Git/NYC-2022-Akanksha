@@ -18,8 +18,8 @@ const TextColumn = styled(Column)(props => [
 
 const Image = styled.img(props => [
   props.imageRounded && tw`rounded`,
-  props.imageBorder && tw`border`,
-  props.imageShadow && tw`shadow`,
+  props.imageBorder && tw`border-8 border-primary-500`,
+  props.imageShadow && tw`shadow-2xl`,
 ]);
 
 const DecoratorBlob = styled(SvgDotPattern)(props => [
@@ -32,7 +32,7 @@ const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
 )`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
+const Description = tw.p`mt-4 text-justify md:text-justify text-lg md:text-base lg:text-xl font-medium leading-relaxed text-purple-800`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
   tw`mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`,
@@ -53,8 +53,8 @@ export default ({
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
-  imageBorder = false,
-  imageShadow = false,
+  imageBorder = true,
+  imageShadow = true,
   imageCss = null,
   imageDecoratorBlob = false,
   imageDecoratorBlobCss = null,
@@ -74,9 +74,9 @@ export default ({
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+            {/* <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
               {primaryButtonText}
-            </PrimaryButton>
+            </PrimaryButton> */}
           </TextContent>
         </TextColumn>
       </TwoColumn>

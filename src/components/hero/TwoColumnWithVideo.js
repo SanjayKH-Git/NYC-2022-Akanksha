@@ -14,6 +14,10 @@ import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
 import DesignIllustration from "../../images/design-illustration.svg";
+import { ReactComponent as Date } from "feather-icons/dist/icons/calendar.svg";
+import { ReactComponent as Location } from "feather-icons/dist/icons/navigation.svg";
+import { ReactComponent as Time } from "feather-icons/dist/icons/clock.svg";
+
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -35,7 +39,7 @@ const WatchVideoButton = styled.button`
   }
 `;
 
-const IllustrationContainer = tw.div`flex justify-center md:justify-end items-center relative max-w-3xl lg:max-w-none`;
+const IllustrationContainer = tw.div`shadow-2xl rounded-xl flex justify-center md:justify-center items-center relative max-w-3xl lg:max-w-none`;
 
 // Random Decorator Blobs (shapes that you see in background)
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
@@ -58,6 +62,21 @@ const StyledModal = styled(ReactModalAdapter)`
 `;
 const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-primary-500`;
 
+const Features = tw.div`mt-8 max-w-sm mx-auto md:mx-0`;
+const Feature = tw.div`mt-8 flex  flex-col md:flex-row`;
+
+const FeatureIconContainer = styled.div`
+  ${tw`mx-auto inline-block border border-primary-500 text-center rounded-full p-2 flex-shrink-0 justify-center`}
+  svg {
+    ${tw`w-10 h-10 text-primary-500`}
+  }
+`;
+
+const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-center `;
+const FeatureHeading = tw.div`font-bold text-2xl text-primary-500`;
+const FeatureDescription = tw.div`mt-1 text-xl`;
+
+
 export default ({
   heading = "Modern React Templates, Just For You",
  description="Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.",
@@ -68,36 +87,53 @@ export default ({
   imageSrc=DesignIllustration,
   imageCss=null,
   imageDecoratorBlob = false,
+  features = null,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
+  const defaultFeatures = [
+    {
+      Icon: Date,
+      title: "Date",
+      description: " December 10 & 11, 2022"
+    },
+    {
+      Icon: Location,
+      title: "Venue",
+      description: "Loyola Hall, Mangalore"
+    },    
+    {
+      Icon: Time,
+      title: "Time",
+      description: "9:30 AM-4:30 PM IST"
+    }
+  ];
+  if (!features) features = defaultFeatures;
+
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Container>
         <TwoColumn>
-          <LeftColumn>
-            <Heading>{heading}</Heading>
-            <Paragraph>{description}</Paragraph>
-            <Actions>
-              <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
-              <WatchVideoButton onClick={toggleModal}>
-                <span className="playIconContainer">
-                  <PlayIcon className="playIcon" />
-                </span>
-                <span className="playText">{watchVideoButtonText}</span>
-              </WatchVideoButton>
-            </Actions>
+          <LeftColumn>            
+             <Features>
+              {features.map((feature, index) => (
+                <Feature key={index}>
+                  <FeatureIconContainer>{<feature.Icon />}</FeatureIconContainer>
+                  <FeatureText>
+                    <FeatureHeading>{feature.title}</FeatureHeading>
+                    <FeatureDescription>{feature.description}</FeatureDescription>
+                  </FeatureText>
+                </Feature>
+             ))}
+             </Features> 
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-              <img
-                css={imageCss}
-                src={imageSrc}
-                alt="Hero"
-              />
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.4287265926696!2d74.8431238602065!3d12.873285165867784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4ed85da98b%3A0xf389c1a8da32dc4d!2sVRFV%2B8JP%20Loyola%20Hall%2C%20Hampankatta%2C%20Mangaluru%2C%20Karnataka%20575003!5e1!3m2!1sen!2sin!4v1661454880256!5m2!1sen!2sin"
+                title="Loyola Hall" width="520" height="350" style={{"border":"20px solid;", "border-radius":"20%;" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               {imageDecoratorBlob && <DecoratorBlob2 />}
             </IllustrationContainer>
           </RightColumn>
