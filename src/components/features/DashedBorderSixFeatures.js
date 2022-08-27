@@ -19,7 +19,7 @@ import SimpleIconImage from "../../images/simple-icon.svg";
 const Container = tw.div`relative`;
 
 const ThreeColumnContainer = styled.div`
-  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-20 md:py-24`}
+  ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-xl mx-auto py-12 md:py-24`}
 `;
 const Heading = tw(SectionHeading)`w-full text-3xl`;
 
@@ -28,11 +28,11 @@ const Column = styled.div`
 `;
 
 const Card = styled.div`
-  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-primary-500 rounded-lg mt-12`}
+  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-4 border-2 border-dashed border-primary-500 bg-gray-200 shadow-lg rounded-lg mt-12`}
   .imageContainer {
     ${tw`border-2 border-primary-500 text-center rounded-full p-6 flex-shrink-0 relative`}
     img {
-      ${tw`w-8 h-8`}
+      ${tw`w-5 h-5`}
     }
   }
 
@@ -45,7 +45,7 @@ const Card = styled.div`
   }
 
   .description {
-    ${tw`mt-3 text-justify font-semibold text-secondary-100 text-sm leading-loose`}
+    ${tw`mt-3 text-justify font-bold text-green-800 text-sm leading-loose`}
   }
 `;
 
@@ -97,7 +97,7 @@ export default () => {
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Highlights of<span tw="text-primary-500 "> NYC-2020</span> & <span tw="text-primary-500 "> GoYes-2021</span></Heading>
+        <Heading>Highlights of<span tw="text-primary-500 "> NYC-2020</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
