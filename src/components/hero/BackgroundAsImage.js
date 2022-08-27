@@ -101,7 +101,7 @@ export default () => {
               <SlantedBackground >
                 <Typewriter
                   options={{
-                    strings: ['NATIONAL YOUTH CONFERENCE 2022.', 'TIME TO ACT!'],
+                    strings: ['NATIONAL YOUTH CONFERENCE 2022.', 'TIME TO ACT!', 'Are You Ready?🎙'],
                     autoStart: true,
                     loop: true,
                   }}
