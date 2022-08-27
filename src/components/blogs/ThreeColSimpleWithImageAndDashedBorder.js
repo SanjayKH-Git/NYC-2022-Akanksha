@@ -28,7 +28,7 @@ const MetaContainer = tw.div`flex items-center`;
 const Meta = styled.div`
   ${tw`text-secondary-100 font-medium text-sm flex items-center leading-none mr-6 last:mr-0`}
   svg {
-    ${tw`w-4 h-4 mr-1`}
+    ${tw`w-5 h-5 mr-1`}
   }
 `;
 
@@ -56,8 +56,9 @@ export default ({
       category: "Keynote Speaker",
       imageSrc:
         "https://www.ratnaprabha.in/wp-content/uploads/2021/01/1-hero-image.jpg",
-      author: "Smt. K Ratna Prabha",      
-      title: "IAS(Rtd) Former Chief Secretary, Govt. of Karnataka",
+      author: "Smt. K Ratna Prabha,",      
+      designation: "IAS(Rtd)",
+      title: "Former Chief Secretary, Govt. of Karnataka",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       url: "#"
     },
@@ -65,8 +66,9 @@ export default ({
       category: "Speaker",
       imageSrc:
         "https://media-exp1.licdn.com/dms/image/C5603AQFpzMMuko_cpQ/profile-displayphoto-shrink_800_800/0/1607358753324?e=1666224000&v=beta&t=Nkks46zqCJl1adocMn7B5e6F-j_eCsV7FSZDFzpsgA4",
-      author: "Sri Sudhir Narayana",
-      title: "IDAS Controller(R&D) Ministry of Defense, Govt. of India",
+      author: "Sri Sudhir Narayana,",
+      designation: "IDAS",
+      title: "Controller(R&D) Ministry of Defense, Govt. of India",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       url: "#"
     },
@@ -74,8 +76,9 @@ export default ({
       category: "Speaker",
       imageSrc:
         "https://www.devdiscourse.com/remote.axd?https://devdiscourse.blob.core.windows.net/devnews/09_05_2020_12_11_35_4220409.png?width=920&format=webp",
-      author: "Ruchi Ghanashyam",
-      title: "IFS (Rtd) Former High Commissioner to the United Kingdom",
+      author: "Ruchi Ghanashyam,",
+      designation: "IFS(Rtd)",
+      title: "Former High Commissioner to the United Kingdom",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       url: "#"
     }
@@ -86,7 +89,7 @@ export default ({
         <HeadingInfoContainer>
           {subheading && <Subheading>{subheading}</Subheading>}
           <HeadingTitle>{heading}</HeadingTitle>
-          <HeadingDescription>{description}</HeadingDescription>
+          {/* <HeadingDescription>{description}</HeadingDescription> */}
         </HeadingInfoContainer>
         <ThreeColumn>
           {blogPosts.map((post, index) => (
@@ -101,7 +104,7 @@ export default ({
                   <MetaContainer>
                     <Meta>
                       <UserIcon />
-                      <div><span tw="text-xl text-primary-500  font-sans hover:font-serif font-bold">{post.author}</span></div>
+                      <div><span tw="text-lg text-primary-500  font-sans hover:font-serif font-bold">{post.author}  <span tw="text-base text-purple-900">{post.designation}</span> </span></div>
                     </Meta>
                   </MetaContainer>
                   <Title>{post.title}</Title>

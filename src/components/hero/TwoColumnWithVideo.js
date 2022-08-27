@@ -141,7 +141,7 @@ export default ({
         <DecoratorBlob1 />
         <StyledModal
           closeTimeoutMS={300}
-          className="mainHeroModal"
+          className="mainHeroModal" 
           isOpen={modalIsOpen}
           onRequestClose={toggleModal}
           shouldCloseOnOverlayClick={true}
