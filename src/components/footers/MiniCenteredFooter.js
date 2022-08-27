@@ -6,6 +6,8 @@ import logo from "../../images/Logos/nyc_Logo.jpg";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import { ReactComponent as InstaIcon } from "../../images/instagram-icon.svg";
+
 
 
 const Container = tw(ContainerBase)`bg-blue-900 text-gray-100 -mx-8 -mb-8`
@@ -24,7 +26,7 @@ const SocialLinksContainer = tw.div`mt-10`;
 const SocialLink = styled.a`
   ${tw`cursor-pointer inline-block text-gray-100 hover:text-gray-500 transition duration-300 mx-4`}
   svg {
-    ${tw`w-5 h-5`}
+    ${tw`w-8 h-8`}
   }
 `;
 
@@ -51,14 +53,17 @@ export default () => {
             <Link href="#">FAQ</Link>
           </LinksContainer>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink target="_blank" rel="noreferrer" href="https://www.facebook.com/nammaakanksha/">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
+            <SocialLink target="_blank" rel="noreferrer" href="https://twitter.com/akanksha_trust">
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCBgVQguXMQtlJAs0aaLMFcg">
               <YoutubeIcon />
+            </SocialLink>
+            <SocialLink target="_blank" rel="noreferrer" href="https://www.instagram.com/akankshatrust/">
+              <InstaIcon />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>

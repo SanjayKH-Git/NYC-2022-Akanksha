@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import Typewriter from 'typewriter-effect';
 
 import Header, { NavLink, NavLinks, PrimaryLink, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
@@ -31,7 +32,7 @@ const LeftColumn = tw.div`flex flex-col items-center lg:block`;
 const RightColumn = tw.div`w-full sm:w-11/12 lg:w-4/5 mt-12 lg:mt-0 lg:pl-12 lg:pt-2`;
 
 const Heading = styled.h1`
-  ${tw`text-2xl text-center lg:text-center sm:text-3xl lg:text-4xl xl:text-4xl font-black text-yellow-400 leading-none`}
+  ${tw`text-3xl text-center lg:text-center sm:text-3xl lg:text-4xl xl:text-4xl font-black text-yellow-400 leading-none`}
   h4{
     ${tw`text-xl text-blue-400`}
   }
@@ -41,16 +42,16 @@ const Heading = styled.h1`
 `;
 
 const SlantedBackground = styled.span`
-  ${tw`relative text-primary-500 px-4 -mx-4 py-2`}
+  ${tw`relative text-primary-500 px-4 mx-4 py-4 hover:bg-purple-400 hover:p-12 hover: transition duration-300 delay-500 shadow `}
   &::before {    
     content: "";
-    ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10`}
+    ${tw`absolute inset-0 bg-gray-100 transform -skew-x-12 -z-10 rounded-xl border-4 border-purple-900 justify-center text-3xl`}
   }
 `;
 
 const Notification = tw.span`inline-block my-4 pl-3 py-1 text-gray-100 border-l-4 border-blue-500 font-medium text-sm`;
 
-const PrimaryAction = tw.button`px-8 py-3 mt-10 text-sm sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-yellow-500 text-primary-500  font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-yellow-700 focus:shadow-outline `;
+const PrimaryAction = tw.button`px-8 py-3 mt-10 lg:mt-64 xl:mt-64 text-xl sm:text-base sm:mt-16 sm:px-8 sm:py-4 bg-yellow-500 text-primary-500  font-bold rounded shadow transition duration-300 hocus:bg-primary-500 hocus:text-yellow-700 focus:shadow-outline `;
 
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 56.25% !important;
@@ -65,13 +66,13 @@ export default () => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="">
-        About
+        About Event
       </NavLink>
       <NavLink href="MainFeature">
         ACT Events
       </NavLink>
       <NavLink href="#">
-        ABout Us
+        About Us
       </NavLink>
       <NavLink href="#">
         NYC Highlights
@@ -93,23 +94,31 @@ export default () => {
           <LeftColumn>
             <Notification>We are Launching Exclusive Event of 2022.</Notification>
             <Heading >
-              <span>Akanksha Charitable Trust [ACT]</span>
+              <span>Akanksha Charitable Trust(R.)</span>
                             
               <h4 style={{"text-align":"auto", color:"rgb(0, 187, 255);", "padding":"10px"}}> Presents </h4>              
 
-              <SlantedBackground >NATIONAL YOUTH CONFERENCE 2022.</SlantedBackground>
+              <SlantedBackground >
+                <Typewriter
+                  options={{
+                    strings: ['NATIONAL YOUTH CONFERENCE 2022.', 'TIME TO ACT!'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </SlantedBackground>
             </Heading>
             <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc0LwtYHm7Fl3NEgMGRcuRINRA9q6quRRRjW9jDY3UTxK7gPw/viewform?usp=sf_link">
-            <PrimaryAction>Register Now</PrimaryAction>
+            <PrimaryAction>Apply Now</PrimaryAction>
             </a>
           </LeftColumn>
-          <RightColumn>
+          {/* <RightColumn>
             <StyledResponsiveVideoEmbed              
               url = "https://www.youtube.com/embed/RM6hGUNgqvI?controls=0&amp;start=2"
               background="transparent"
             />            
           
-          </RightColumn>
+          </RightColumn> */}
         </TwoColumn>
       </HeroContainer>
     </Container>

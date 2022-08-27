@@ -108,8 +108,8 @@ export default ({
                     </Meta>
                   </MetaContainer>
                   <Title>{post.title}</Title>
-                  {/* <Description>{post.description}</Description> */}
-                  <Link href={post.url}>Read More</Link>
+                  {/* <Description>{post.description}</Description> 
+                  <Link href={post.url}>Read More</Link>*/}
                 </Details>
               </Card>
             </Column>
