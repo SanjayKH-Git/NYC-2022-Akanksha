@@ -34,7 +34,7 @@ export default () => {
         heading={
           <>
            About this Event
-            <wbr /> <HighlightedText>NYC-2022.</HighlightedText>
+            <br /> <HighlightedText>NYC-2022.</HighlightedText>
           </>
         }
         description={

@@ -27,7 +27,8 @@ const DecoratorBlob = styled(SvgDotPattern)(props => [
 ])
 
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
-
+const Theme = tw.i`p-16 px-8  bg-purple-400 rounded hover:py-8`;
+const Th = tw.b`text-blue-900 font-extrabold px-0 inline-block p-2 pt-32 text-left lg:justify-center`;
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
@@ -68,6 +69,12 @@ export default ({
         <ImageColumn>
           <Image css={imageCss} src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded}/>
           {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}
+          <Theme>
+            <b>THEME : </b>
+            <Th>
+            <i> YOUTH AND GOOD GOVERNANCE </i>
+            </Th> 
+          </Theme>
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>

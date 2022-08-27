@@ -93,7 +93,7 @@ export default ({
 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
-  const defaultFeatures = [
+  const defaultFeatures = [    
     {
       Icon: Date,
       title: "Date",
@@ -133,7 +133,7 @@ export default ({
           <RightColumn>
             <IllustrationContainer>
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.4287265926696!2d74.8431238602065!3d12.873285165867784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4ed85da98b%3A0xf389c1a8da32dc4d!2sVRFV%2B8JP%20Loyola%20Hall%2C%20Hampankatta%2C%20Mangaluru%2C%20Karnataka%20575003!5e1!3m2!1sen!2sin!4v1661454880256!5m2!1sen!2sin"
-                title="Loyola Hall" width="520" height="350" style={{"border":"20px solid;", "border-radius":"20%;" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                title="Loyola Hall" width="520" height="350" style={{"border":"20px solid;", "border-radius":"20px;" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               {imageDecoratorBlob && <DecoratorBlob2 />}
             </IllustrationContainer>
           </RightColumn>

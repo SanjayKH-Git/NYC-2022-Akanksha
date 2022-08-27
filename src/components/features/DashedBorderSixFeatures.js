@@ -9,12 +9,18 @@ import defaultCardImage from "../../images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "../../images/svg-decorator-blob-3.svg";
 
-import SupportIconImage from "../../images/support-icon.svg";
+import SpeakerIconImage from "../../images/support-icon.svg";
 import ShieldIconImage from "../../images/shield-icon.svg";
 import CustomizeIconImage from "../../images/customize-icon.svg";
 import FastIconImage from "../../images/fast-icon.svg";
 import ReliableIconImage from "../../images/reliable-icon.svg";
 import SimpleIconImage from "../../images/simple-icon.svg";
+import CustomLogo from "../../images/customer-support-illustration.svg";
+import ImpactLogo from "../../images/happy-illustration.svg";
+import IgniteTalks from "../../images/design-illustration.svg";
+
+
+
 
 const Container = tw.div`relative`;
 
@@ -28,11 +34,11 @@ const Column = styled.div`
 `;
 
 const Card = styled.div`
-  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-4 border-2 border-dashed border-primary-500 bg-gray-200 shadow-lg rounded-lg mt-12`}
+  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-4 border-2 border-dashed border-primary-500 bg-gray-200 shadow-lg rounded-lg mt-12 hover:bg-purple-200 focus:bg-purple-200`}
   .imageContainer {
-    ${tw`border-2 border-primary-500 text-center rounded-full p-6 flex-shrink-0 relative`}
+    ${tw`border-2 border-primary-500 text-center rounded-full p-2 flex-shrink-0 relative hover:bg-indigo-200`}
     img {
-      ${tw`w-5 h-5`}
+      ${tw`w-8 h-8`}
     }
   }
 
@@ -68,7 +74,7 @@ export default () => {
       title: "Acclaimed National level conference of Karnataka.",
       description: "Akanksha has marked its way by presenting the first-ever National Youth Conference of Karnataka in 2020. Akanksha aspires to bring together youth from various parts of the country to provide a platform and exposure in order to bring all the incredible ideas under the spotlight in order to build a well-established society. Online conference NYC 2021 with a prominent theme also flattered as a successful event."
     },
-    { imageSrc: SupportIconImage,
+    { imageSrc: FastIconImage,
       title: "Unconference",
       description: "The unique set of skills possessed by our enthusiastic participants were unleashed by empowering them to share theirs ideas and present theirs thoughts to everyone." },
     { imageSrc: CustomizeIconImage,
@@ -77,21 +83,21 @@ export default () => {
     { imageSrc: ReliableIconImage,
       title: "Panel Discussion",
       description: "A healthy panel discussion is what makes an event very intriguing. Experts from different fields added their perception and insights on different issues and needs of the society which led our participants to realize how youth can bring impactful changes by facing the challenges and help reconstruct the society in a better way."},
-    { imageSrc: FastIconImage,
+    { imageSrc: SpeakerIconImage,
       title: "Eminent Speakers",
       description: "Some renowned speakers shared their excellence which simulated a ray of hope among the participants to believe and achieve. Their wisdom brought consciousness and strength among the delegates." },
-    { imageSrc: SimpleIconImage, 
+    { imageSrc: IgniteTalks, 
       title: "Ignite Talks",
       description: "Our delegate speakers shared their own life stories which caught the attention of the participants. Their ideal views and selflessness inspired everyone." },
-    { imageSrc: SimpleIconImage, 
+    { imageSrc: CustomLogo, 
       title: "SDG Hackathon",
       description: "Bringing the real change is what matters to Akanksha. Delegates were divided into teams to present their solution oriented ideas on the given SDG . The presentations put forward by the top 10 selected teams were the real eyecatchers."},
     { imageSrc: SimpleIconImage, 
       title: "Fun Activities",
       description: " To boost up the energy and to improve communication among the delegates fun activities were introduced in between the different sessions. This helped the participants to have fun and make the conference memorable."},
-      { imageSrc: SimpleIconImage, 
+      { imageSrc: ImpactLogo, 
         title: "Impact of NYC 2020",
-        description: "NYC 2020 has been one of the fruitful events where ‘Threedhara’ is a group of young minds working over ‘Gender equality ‘ was a result of SDG Hackathon held at NYC 2020 which gives us immense joy to witness the change we are seeking."},    
+        description: "NYC 2020 has been one of the fruitful events where ‘Threedhara’ is a group of young minds working over ‘Gender equality‘ was a result of SDG Hackathon held at NYC 2020 which gives us immense joy to witness the change we are seeking."},    
   ];
 
   return (
