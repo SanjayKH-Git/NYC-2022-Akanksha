@@ -7,6 +7,8 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/alert-octagon.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/battery-charging.svg";
 import TeamIllustrationSrc from "../../images/Group_Discussion4.png";
+import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
+
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -30,26 +32,36 @@ const Heading = tw(
 const Description = tw.p`mt-4 text-justify md:text-justify text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-400`;
 
 const Features = tw.div`mt-8 max-w-sm mx-auto md:mx-0`;
-const Feature = tw.div`mt-8 flex items-start flex-col md:flex-row`;
+const Feature = tw.div`mt-8`;
 
 const FeatureIconContainer = styled.div`
-  ${tw`mx-auto inline-block border border-primary-500 text-center rounded-full p-2 flex-shrink-0`}
+  ${tw`mx-auto inline-block border border-primary-500 text-center rounded-full p-2 `}
   svg {
     ${tw`w-5 h-5 text-primary-500`}
   }
 `;
 
-const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-left`;
-const FeatureHeading = tw.div`font-bold text-lg text-primary-500`;
+const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-left inline-block`;
+const FeatureHeading = tw.div`font-bold text-lg text-primary-500 inline-block`;
 const FeatureDescription = tw.div`mt-1 text-sm`;
 
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
+
+const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
+  padding-bottom: 56.25% !important;
+  padding-top: 30px !important;
+  ${tw`rounded-lg`}
+  iframe {
+    ${tw`rounded-lg bg-black shadow-xl`}
+  }
+`;
+
 
 export default ({
   subheading = "Objectives",
   heading = (
     <>
-      Objectives of <span tw="text-primary-500">NYC</span>-2022.
+      Eligibilities for <span tw="text-primary-500">NYC</span>-2022.
     </>
   ),
   
@@ -57,7 +69,7 @@ export default ({
   primaryButtonText = "See Our Portfolio",
   primaryButtonUrl = "https://timerse.com",
   features = null,
-  textOnLeft = true
+  textOnLeft = false
   
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
@@ -88,25 +100,29 @@ export default ({
       <TwoColumn>
         <ImageColumn>
           
-          <Image imageSrc={TeamIllustrationSrc} />
+          {/* <Image imageSrc={TeamIllustrationSrc} /> */}
+          <StyledResponsiveVideoEmbed              
+              url = "https://www.youtube.com/embed/RM6hGUNgqvI?controls=0&amp;start=2"
+              background="transparent"
+            />                      
 
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
             {/* <Subheading>{subheading}</Subheading> */}
             <Heading>{heading}</Heading>
-            <Description>{description}</Description>
-            {/* <Features>
+             {/* <Description>{description}</Description> */}
+            <Features>
               {features.map((feature, index) => (
                 <Feature key={index}>
                   <FeatureIconContainer>{<feature.Icon />}</FeatureIconContainer>
                   <FeatureText>
                     <FeatureHeading>{feature.title}</FeatureHeading>
-                    <FeatureDescription>{feature.description}</FeatureDescription>
+                    {/* <FeatureDescription>{feature.description}</FeatureDescription> */}
                   </FeatureText>
                 </Feature>
               ))}
-            </Features> */}
+            </Features> 
             {/* <PrimaryButton as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton> */}

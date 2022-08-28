@@ -80,7 +80,7 @@ export default ({
       designation: "IFS(Rtd)",
       title: "Former High Commissioner to the United Kingdom",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://en.wikipedia.org/wiki/Ruchi_Ghanashya"
+      url: "https://en.wikipedia.org/wiki/Ruchi_Ghanashyam"
     }
   ];
   return (

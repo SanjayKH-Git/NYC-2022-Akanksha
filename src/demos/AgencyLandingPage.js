@@ -4,9 +4,12 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 // import countDown from "components/features/daisyCountDown.js"
+import TrailerSection from "components/features/TrailerSection.js"
 import Details from "components/hero/TwoColumnWithVideo.js"
 import EventInfo from "components/features/TwoColWithButton.js"
-import Hero from "components/hero/BackgroundAsImage.js";
+// import Hero from "components/hero/BackgroundAsImage.js";
+import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
+
 import Highlights from "components/features/DashedBorderSixFeatures";
 import AboutUs from "components/features/TwoColSingleFeatureWithStats2.js";
 import Objectives from "components/features/TwoColWithTwoFeaturesAndButtons.js";
@@ -64,6 +67,7 @@ export default () => {
         primaryButtonText="Order Now"
         watchVideoButtonText="Meet The Chefs"
       />
+      {/* <TrailerSection /> */}
       <Speakers />
       <AboutUs />
       <Highlights />
@@ -83,7 +87,7 @@ export default () => {
             quote:
               "I was lucky to be a part of NYC 2020 as a speaker and a panelist. From tons of events I have attended and spoken at, NYC is my favorite. Not only is there immense value in terms of learning for the attendees, the team is just mind-blowingly friendly and helpful. Once you get familiar with the people behind NYC, they become like a family. I recommend everyone to attend NYC 2022 and get a great boost in the coming year and the future.",
             customerName: "Deep Kakkad",
-            customerTitle: "NYC  Delegate, Gujarath"
+            customerTitle: "NYC  Delegate, Gujarat"
           },
           {
             imageSrc: require("../images/Testimonials/Feed/Dipu_Feed.JPG"),

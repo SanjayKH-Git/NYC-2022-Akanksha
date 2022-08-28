@@ -74,30 +74,46 @@ export default () => {
       title: "Acclaimed National Level Conference of Karnataka.",
       description: "Akanksha has marked its way by presenting the first-ever National Youth Conference of Karnataka in 2020. Akanksha aspires to bring together youth from various parts of the country to provide a platform and exposure in order to bring all the incredible ideas under the spotlight in order to build a well-established society. Online conference NYC 2021 with a prominent theme also flattered as a successful event."
     },
-    { imageSrc: FastIconImage,
+    {
+      imageSrc: FastIconImage,
       title: "Unconference",
-      description: "The unique set of skills possessed by our enthusiastic participants were unleashed by empowering them to share theirs ideas and present theirs thoughts to everyone." },
-    { imageSrc: CustomizeIconImage,
+      description: "The unique set of skills possessed by our enthusiastic participants were unleashed by empowering them to share theirs ideas and present theirs thoughts to everyone."
+    },
+    {
+      imageSrc: CustomizeIconImage,
       title: "Theme",
-      description: "Unique theme for each year helps in realizing various issues of our society. Team ACT focused on social concerning themes for NYC 2020 and NYC 2021."},
-    { imageSrc: ReliableIconImage,
+      description: "Unique theme for each year helps in realizing various issues of our society. Team ACT focused on social concerning themes for NYC 2020 and NYC 2021."
+    },
+    {
+      imageSrc: ReliableIconImage,
       title: "Panel Discussion",
-      description: "A healthy panel discussion is what makes an event very intriguing. Experts from different fields added their perception and insights on different issues and needs of the society which led our participants to realize how youth can bring impactful changes by facing the challenges and help reconstruct the society in a better way."},
-    { imageSrc: SpeakerIconImage,
+      description: "A healthy panel discussion is what makes an event very intriguing. Experts from different fields added their perception and insights on different issues and needs of the society which led our participants to realize how youth can bring impactful changes by facing the challenges and help reconstruct the society in a better way."
+    },
+    {
+      imageSrc: SpeakerIconImage,
       title: "Eminent Speakers",
-      description: "Some renowned speakers shared their excellence which simulated a ray of hope among the participants to believe and achieve. Their wisdom brought consciousness and strength among the delegates." },
-    { imageSrc: IgniteTalks, 
+      description: "Some renowned speakers shared their excellence which simulated a ray of hope among the participants to believe and achieve. Their wisdom brought consciousness and strength among the delegates."
+    },
+    {
+      imageSrc: IgniteTalks,
       title: "Ignite Talks",
-      description: "Our delegate speakers shared their own life stories which caught the attention of the participants. Their ideal views and selflessness inspired everyone." },
-    { imageSrc: CustomLogo, 
+      description: "Our delegate speakers shared their own life stories which caught the attention of the participants. Their ideal views and selflessness inspired everyone."
+    },
+    {
+      imageSrc: CustomLogo,
       title: "SDG Hackathon",
-      description: "Bringing the real change is what matters to Akanksha. Delegates were divided into teams to present their solution oriented ideas on the given SDG . The presentations put forward by the top 10 selected teams were the real eyecatchers."},
-    { imageSrc: SimpleIconImage, 
+      description: "Bringing the real change is what matters to Akanksha. Delegates were divided into teams to present their solution oriented ideas on the given SDG . The presentations put forward by the top 10 selected teams were the real eyecatchers."
+    },
+    {
+      imageSrc: SimpleIconImage,
       title: "Fun Activities",
-      description: " To boost up the energy and to improve communication among the delegates fun activities were introduced in between the different sessions. This helped the participants to have fun and make the conference memorable."},
-      { imageSrc: ImpactLogo, 
-        title: "Impact of NYC 2020",
-        description: "NYC 2020 has been one of the fruitful events where ‘Threedhara’ is a group of young minds working over ‘Gender equality‘ was a result of SDG Hackathon held at NYC 2020 which gives us immense joy to witness the change we are seeking."},    
+      description: " To boost up the energy and to improve communication among the delegates fun activities were introduced in between the different sessions. This helped the participants to have fun and make the conference memorable."
+    },
+    {
+      imageSrc: ImpactLogo,
+      title: "Impact of NYC 2020",
+      description: "NYC 2020 has been one of the fruitful events where ‘Threedhara’ is a group of young minds working over ‘Gender equality‘ was a result of SDG Hackathon held at NYC 2020 which gives us immense joy to witness the change we are seeking."
+    },
   ];
 
   return (
@@ -114,7 +130,7 @@ export default () => {
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description ">
                   {card.description || "Description."}
-              </p>
+                </p>
               </span>
             </Card>
           </Column>

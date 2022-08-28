@@ -212,6 +212,7 @@ module.exports = {
       "4xl": '2.5rem',
       "5xl":'3rem',
       "6xl":'4.5rem',
+      "32xl":'10rem',
       full: '9999px',
     },
     borderWidth: {

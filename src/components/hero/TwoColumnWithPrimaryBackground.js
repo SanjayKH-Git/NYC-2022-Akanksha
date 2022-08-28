@@ -1,5 +1,9 @@
 import React from "react";
 import tw from "twin.macro";
+import styled from "styled-components";
+import Typewriter from 'typewriter-effect';
+
+
 import { css } from "styled-components/macro"; //eslint-disable-line
 import HeaderBase, {
   LogoLink as LogoLinkBase,
@@ -8,13 +12,13 @@ import HeaderBase, {
   PrimaryLink as PrimaryLinkBase
 } from "../headers/light.js";
 import { Container as ContainerBase, ContentWithVerticalPadding, Content2Xl } from "components/misc/Layouts.js";
-import { SectionHeading } from "components/misc/Headings.js";
+import { SectionHeading, Subheading } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import logoImageSrc from "images/logo-light.svg";
-import serverIllustrationImageSrc from "images/server-illustration-2.svg";
+import logoImageSrc from "../../images/Logos/nyc_Logo.jpg";
+import serverIllustrationImageSrc from "../../images/Logos/ACT_Logo_White.png";
 
-const PrimaryBackgroundContainer = tw.div`-mx-8 px-8 bg-primary-900 text-gray-100`;
+const PrimaryBackgroundContainer = tw.div`-mx-8 px-8 bg-purple-900  shadow-inner rounded-br-32xl  text-gray-100`;
 const Header = tw(HeaderBase)`max-w-none -mt-8 py-8 -mx-8 px-8`;
 const NavLink = tw(NavLinkBase)`lg:text-gray-100 lg:hocus:text-gray-300 lg:hocus:border-gray-100`;
 const LogoLink = tw(LogoLinkBase)`text-gray-100 hocus:text-gray-300`;
@@ -24,31 +28,48 @@ const Container = tw(ContainerBase)``;
 const Row = tw.div`flex items-center flex-col lg:flex-row`;
 const Column = tw.div`lg:w-1/2`;
 const TextColumn = tw.div`text-center lg:text-left`;
-const IllustrationColumn = tw(Column)`mt-16 lg:mt-0 lg:ml-16`;
-const Heading = tw(SectionHeading)`max-w-3xl lg:max-w-4xl lg:text-left leading-tight`;
+const IllustrationColumn = tw(Column)`mt-8 lg:mt-0 lg:ml-8`;
 const Description = tw(SectionDescription)`mt-4 max-w-2xl text-gray-100 lg:text-base mx-auto lg:mx-0`;
-const PrimaryButton = tw(PrimaryButtonBase)`mt-8 text-sm sm:text-base px-6 py-5 sm:px-10 sm:py-5 bg-primary-400 inline-block hocus:bg-primary-500`;
-const Image = tw.img`w-144 ml-auto`
+const PrimaryButton = tw(PrimaryButtonBase)`mt-8 mb-16 text-sm sm:text-base px-6 py-5 sm:px-10 sm:py-5 bg-primary-400 inline-block hocus:bg-primary-500 shadow-2xl`;
+const Image = tw.img`w-144 ml-auto `;
+
+const Heading = tw(SectionHeading)`max-w-3xl lg:max-w-4xl lg:text-left leading-tight`;
+const Host = tw(SectionHeading)`max-w-3xl text-2xl text-yellow-400 lg:max-w-4xl lg:text-4xl lg:text-left md:text-left`;
+const Presents = tw(SectionHeading)`max-w-3xl text-2xl p-4 lg:max-w-2xl lg:px-32 md:text-left`;
+
 
 export default ({
-  heading = "High Performant Servers tailored to your needs",
+  heading = "NATIONAL YOUTH CONFERENCE 2022",
   description = "Our cloud provisions the best servers, with fast SSD, powerful Xeon Processors, whenever you need it. Oh, and we have 99.9% SLA",
-  primaryButtonText = "Start Your 15 Day Free Trial",
-  primaryButtonUrl = "#",
+  primaryButtonText = "Apply Now",
+  primaryButtonUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc0LwtYHm7Fl3NEgMGRcuRINRA9q6quRRRjW9jDY3UTxK7gPw/viewform?usp=sf_link",
   imageSrc = serverIllustrationImageSrc,
 }) => {
   const logoLink = (
     <LogoLink href="/">
       <img src={logoImageSrc} alt="Logo" />
-      Treact
+      NYC-2022
     </LogoLink>
   );
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">Features</NavLink>
-      <NavLink href="#">Pricing</NavLink>
-      <NavLink href="#">Login</NavLink>
-      <PrimaryLink href="#">Signup</PrimaryLink>
+      <NavLink href="">
+        About Event
+      </NavLink>
+      <NavLink href="MainFeature">
+        ACT Events
+      </NavLink>
+      <NavLink href="#">
+        About Us
+      </NavLink>
+      <NavLink href="#">
+        NYC Highlights
+      </NavLink>
+    </NavLinks>,
+    <NavLinks key={2}>
+      <PrimaryLink target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc0LwtYHm7Fl3NEgMGRcuRINRA9q6quRRRjW9jDY3UTxK7gPw/viewform?usp=sf_link">
+        Apply Now
+      </PrimaryLink>
     </NavLinks>
   ];
   return (
@@ -59,9 +80,27 @@ export default ({
           <ContentWithVerticalPadding>
             <Row>
               <TextColumn>
-                <Heading>{heading}</Heading>
-                <Description>{description}</Description>
-                <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
+                <Host >
+                  <span>Akanksha Charitable Trust(R.)</span>
+                </Host>
+                <Presents>Presents</Presents>
+                <Heading>
+                  <Typewriter
+                    onInit={(typewriter) => {
+                      typewriter.typeString("NATIONAL YOUTH CONFERENCE 2022")
+                        .pauseFor(1200)
+                        .deleteAll()
+                      typewriter.typeString("TIME TO ACT!")
+                        .pauseFor(1200)
+                        .deleteAll()
+                      typewriter.typeString("NATIONAL YOUTH CONFERENCE 2022")
+                        .stop()
+                        .start()
+                    }}
+                  />
+                </Heading>
+                {/* <Description>{description}</Description> */}
+                <PrimaryButton as="a" rel="noreferrer" target="_blank" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
               </TextColumn>
               <IllustrationColumn>
                 <Image src={imageSrc} />

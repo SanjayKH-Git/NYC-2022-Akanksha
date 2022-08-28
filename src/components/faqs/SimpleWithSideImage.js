@@ -62,7 +62,7 @@ export default ({
         " It's a self-funded event. No traveling fares are provided."
     },
     {
-      question: "Is there any registration fee? ?",
+      question: "Is there any registration fee ?",
       answer:
         "Yes, Rs. 750 will be charged for registration."
     },
