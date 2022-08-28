@@ -71,7 +71,7 @@ export default () => {
   const cards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Acclaimed National level conference of Karnataka.",
+      title: "Acclaimed National Level Conference of Karnataka.",
       description: "Akanksha has marked its way by presenting the first-ever National Youth Conference of Karnataka in 2020. Akanksha aspires to bring together youth from various parts of the country to provide a platform and exposure in order to bring all the incredible ideas under the spotlight in order to build a well-established society. Online conference NYC 2021 with a prominent theme also flattered as a successful event."
     },
     { imageSrc: FastIconImage,
@@ -79,7 +79,7 @@ export default () => {
       description: "The unique set of skills possessed by our enthusiastic participants were unleashed by empowering them to share theirs ideas and present theirs thoughts to everyone." },
     { imageSrc: CustomizeIconImage,
       title: "Theme",
-      description: " Unique theme for each year helps in realizing various issues of our society. Team ACT focused on social concerning themes for NYC 2020 and NYC 2021."},
+      description: "Unique theme for each year helps in realizing various issues of our society. Team ACT focused on social concerning themes for NYC 2020 and NYC 2021."},
     { imageSrc: ReliableIconImage,
       title: "Panel Discussion",
       description: "A healthy panel discussion is what makes an event very intriguing. Experts from different fields added their perception and insights on different issues and needs of the society which led our participants to realize how youth can bring impactful changes by facing the challenges and help reconstruct the society in a better way."},
@@ -103,7 +103,7 @@ export default () => {
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Highlights of<span tw="text-primary-500 "> NYC-2020</span></Heading>
+        <Heading>Highlights of<span tw="text-primary-500 "> NYC-2020 & NYC-2021</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>

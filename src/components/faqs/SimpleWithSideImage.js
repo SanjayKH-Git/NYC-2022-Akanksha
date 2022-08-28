@@ -62,9 +62,9 @@ export default ({
         " It's a self-funded event. No traveling fares are provided."
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "Is there any registration fee? ?",
       answer:
-        "Yes. Wifi will be provided after entering Hall."
+        "Yes, Rs. 750 will be charged for registration."
     },
     {
       question: "Where can I reach you for support ?",

@@ -80,7 +80,7 @@ export default ({
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
-            <Subheading>{subheading}</Subheading>
+            {/* <Subheading>{subheading}</Subheading> */}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
             {/* <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>

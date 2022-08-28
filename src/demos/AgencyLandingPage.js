@@ -7,11 +7,11 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Details from "components/hero/TwoColumnWithVideo.js"
 import EventInfo from "components/features/TwoColWithButton.js"
 import Hero from "components/hero/BackgroundAsImage.js";
-import Features from "components/features/DashedBorderSixFeatures";
-import MainFeature from "components/features/TwoColSingleFeatureWithStats2.js";
-import MainFeature2 from "components/features/TwoColWithTwoFeaturesAndButtons.js";
+import Highlights from "components/features/DashedBorderSixFeatures";
+import AboutUs from "components/features/TwoColSingleFeatureWithStats2.js";
+import Objectives from "components/features/TwoColWithTwoFeaturesAndButtons.js";
 // import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
-import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
+import Speakers from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 import FAQ from "components/faqs/SimpleWithSideImage.js";
 import ContactUsForm from "components/forms/SimpleContactUs.js";
@@ -29,20 +29,20 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero />
-      <MainFeature2 />
+      <Objectives />
       <EventInfo
         subheading={<Subheading>Description</Subheading>}
         heading={
           <>
            About this Event
-            <br /> <HighlightedText>NYC-2022.</HighlightedText>
+            {/* <br /> <HighlightedText>NYC-2022.</HighlightedText> */}
           </>
         }
         description={
           <Description>
            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India is a country teeming in youth with 70% of people below the age of 40 years. While 34% of India’s Gross National Income is contributed by the youth; there is a dire need to develop this percentage. In fact, the youth today is a major resource for not only development of financial prosperity but for social changes as well. The development of youth leadership is critical to building civic capacity and long term community sustainability. When youth develop such skills, we establish capable, effective leaders for the next generation.</p>
            <br></br>
-   	       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Having realized this, "AKANKSHA CHARITABLE TRUST [ACT] " is organizing this momentous event – NATIONAL YOUTH CONFERENCE 2022. The NYC-2022 is a platform to discuss, disseminate and deliberate on the possible plans, targets and solutions which must be generated and implemented by our youth in order to enhance their effective participation and role in nation building. The theme of the convention is “YOUTH & GOOD GOVERNANCE”. With the inculcation of youth empowerment, the youth can reject the status quo and pave a path for a better future. Today the youth is claiming his right to decent living by willing to take risks which helps in the development of leadership skills. To build a better tomorrow, we need to nurture the saplings of today. Hence, a radical government which is pro-people comes from harnessing bright minds, capable of taking the nation into a brighter future.</p>
+   	       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Having realized this, "AKANKSHA CHARITABLE TRUST [ACT]" is organizing this momentous event – NATIONAL YOUTH CONFERENCE 2022. The NYC-2022 is a platform to discuss, disseminate and deliberate on the possible plans, targets and solutions which must be generated and implemented by our youth in order to enhance their effective participation and role in nation building. The theme of the convention is “YOUTH & GOOD GOVERNANCE”. With the inculcation of youth empowerment, the youth can reject the status quo and pave a path for a better future. Today the youth is claiming his right to decent living by willing to take risks which helps in the development of leadership skills. To build a better tomorrow, we need to nurture the saplings of today. Hence, a radical government which is pro-people comes from harnessing bright minds, capable of taking the nation into a brighter future.</p>
           </Description>
         }
         buttonRounded={false}
@@ -64,9 +64,9 @@ export default () => {
         primaryButtonText="Order Now"
         watchVideoButtonText="Meet The Chefs"
       />
-      <Blog />
-      <MainFeature />
-      <Features />
+      <Speakers />
+      <AboutUs />
+      <Highlights />
       {/* <Portfolio /> */}
       <Testimonial
         subheading="Testimonials"
@@ -120,7 +120,7 @@ export default () => {
         subheading="FAQs"
         heading={
           <>
-            Most Common <span tw="text-primary-500">Questions</span>
+           Frequently Asked <span tw="text-primary-500">Questions</span>
           </>
         }
       />

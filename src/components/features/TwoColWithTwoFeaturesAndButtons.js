@@ -49,7 +49,7 @@ export default ({
   subheading = "Objectives",
   heading = (
     <>
-      Objectives of <span tw="text-primary-500">NYC</span> 2022.
+      Objectives of <span tw="text-primary-500">NYC</span>-2022.
     </>
   ),
   

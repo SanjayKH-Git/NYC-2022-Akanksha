@@ -47,7 +47,7 @@ const DecoratorBlob2 = tw(
 
 export default ({
   subheading = "Speakers",
-  heading = <> NYC - 2022 <span tw="text-primary-500">SPEAKERS🎙</span></>,
+  heading = <> NYC-2022 <span tw="text-primary-500">SPEAKERS🎙</span></>,
   description = "Decription? INTRO ",
 
 }) => {
@@ -60,7 +60,7 @@ export default ({
       designation: "IAS(Rtd)",
       title: "Former Chief Secretary, Govt. of Karnataka",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "#"
+      url: "https://www.ratnaprabha.in/"
     },
     {
       category: "Speaker",
@@ -70,7 +70,7 @@ export default ({
       designation: "IDAS",
       title: "Controller(R&D) Ministry of Defense, Govt. of India",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "#"
+      url: "https://www.linkedin.com/in/mashalti"
     },
     {
       category: "Speaker",
@@ -80,14 +80,14 @@ export default ({
       designation: "IFS(Rtd)",
       title: "Former High Commissioner to the United Kingdom",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "#"
+      url: "https://en.wikipedia.org/wiki/Ruchi_Ghanashya"
     }
   ];
   return (
     <Container>
       <Content>
         <HeadingInfoContainer>
-          {subheading && <Subheading>{subheading}</Subheading>}
+          {/* {subheading && <Subheading>{subheading}</Subheading>} */}
           <HeadingTitle>{heading}</HeadingTitle>
           {/* <HeadingDescription>{description}</HeadingDescription> */}
         </HeadingInfoContainer>
@@ -108,8 +108,8 @@ export default ({
                     </Meta>
                   </MetaContainer>
                   <Title>{post.title}</Title>
-                  {/* <Description>{post.description}</Description> 
-                  <Link href={post.url}>Read More</Link>*/}
+                  {/* <Description>{post.description}</Description>  */}
+                  <Link target="_blank" rel="noreferror" href={post.url}>Read More</Link>
                 </Details>
               </Card>
             </Column>
