@@ -772,5 +772,6 @@ module.exports = {
     transitionDuration: ['responsive'],
   },
   corePlugins: {},
-  plugins: [],
+  // plugins: [require("daisyui")],
+  
 }

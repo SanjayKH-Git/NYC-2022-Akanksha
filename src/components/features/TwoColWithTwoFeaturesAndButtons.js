@@ -52,11 +52,13 @@ export default ({
       Objectives of <span tw="text-primary-500">NYC</span> 2022.
     </>
   ),
+  
   description = "The ‘demographic dividend’ is a great boon to a democratic country like India. Youth can be a great source of essence if channelized and harnessed properly. Youth energy can drive economic growth and productivity and bring greater innovation to the economy. Experience in different countries has shown that Youth in Governance can improve India's development scenario, leading to, among other things, reduction of poverty, unemployment, corruption, terrorist activities, and so on. The study examines the role that youth can play for sustainable social change in India and their potential to overcome existing social problems by being engaged with Youth in Governance that demands effective public policies regarding youth and Youth in Governance. The youth constitute a major share of voters for the country to elect its representatives which frames the structure of the country’s governance. Active participation of youth in governance can boost innovation and economy and help overcome the social challenges faced by the country. Young men and women are the seeds of future India who require it to be watered properly. NYC 2022 provides a platform for the youth to understand the process of nation building and their role in it; and share the ideas to make this country a more vibrant nation.",
   primaryButtonText = "See Our Portfolio",
   primaryButtonUrl = "https://timerse.com",
   features = null,
   textOnLeft = true
+  
 }) => {
   // The textOnLeft boolean prop can be used to display either the text on left or right side of the image.
 
@@ -76,15 +78,18 @@ export default ({
       description: "We promise to offer you the best rate we can - at par with the industry standard."
     }
   ];
+  
 
   if (!features) features = defaultFeatures;
 
   return (
     <Container>
+      
       <TwoColumn>
         <ImageColumn>
-          <Image imageSrc={TeamIllustrationSrc} />
           
+          <Image imageSrc={TeamIllustrationSrc} />
+
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>

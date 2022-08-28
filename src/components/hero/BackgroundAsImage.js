@@ -95,21 +95,36 @@ export default () => {
             <Notification>We are Launching Exclusive Event of 2022.</Notification>
             <Heading >
               <span>Akanksha Charitable Trust(R.)</span>
-                            
-              <h4 style={{"text-align":"auto", color:"rgb(0, 187, 255);", "padding":"10px"}}> Presents </h4>              
+
+              <h4 style={{ "text-align": "auto", color: "rgb(0, 187, 255);", "padding": "10px" }}> Presents </h4>
 
               <SlantedBackground >
-                <Typewriter
+                {/* <Typewriter
                   options={{
-                    strings: ['NATIONAL YOUTH CONFERENCE 2022.', 'TIME TO ACT!', 'Are You Ready?🎙'],
+                    strings: ['NATIONAL YOUTH CONFERENCE 2022.', 'TIME TO ACT!', 'Are You Ready?🎙', 'NATIONAL YOUTH CONFERENCE 2022.'],
                     autoStart: true,
                     loop: true,
+                    stop(){}
+                  }}
+                /> */}
+
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter.typeString("NATIONAL YOUTH CONFERENCE 2022")
+                      .pauseFor(800)
+                      .deleteAll()
+                    typewriter.typeString("TIME TO ACT!")
+                      .pauseFor(800)
+                      .deleteAll()
+                    typewriter.typeString("NATIONAL YOUTH CONFERENCE 2022")
+                      .stop()
+                      .start()
                   }}
                 />
               </SlantedBackground>
             </Heading>
             <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSc0LwtYHm7Fl3NEgMGRcuRINRA9q6quRRRjW9jDY3UTxK7gPw/viewform?usp=sf_link">
-            <PrimaryAction>Apply Now</PrimaryAction>
+              <PrimaryAction>Apply Now</PrimaryAction>
             </a>
           </LeftColumn>
           {/* <RightColumn>
