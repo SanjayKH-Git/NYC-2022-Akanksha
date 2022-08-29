@@ -79,7 +79,8 @@ export default () => {
             Our Participant's <span tw="text-primary-500">Feedbacks</span>
           </>
         }
-        description="Our beloved Participant's shared their Experiences from Previous NYC."
+        description="These are some of the frequently asked inquiries we receive from past attendees about our events. Please use the contact form below if you have any additional queries.
+"
         testimonials={[
           {
             imageSrc: require("../images/Testimonials/Feed/Deep_Kakkad_speech.JPG"),

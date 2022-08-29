@@ -40,7 +40,7 @@ const Answer = motion(tw.dd`pointer-events-none text-sm sm:text-base leading-rel
 export default ({
   subheading = "",
   heading = "Questions",
-  description = "Here are some frequently asked questions about our Events from our loving Visitors. Should you have any other questions, feel free to reach out via the contact form below.",
+  description = "These are some of the frequently asked inquiries we receive from past attendees about our events. Please use the contact form below if you have any additional queries.",
   imageSrc = "https://images.unsplash.com/photo-1579427421635-a0015b804b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
   imageContain = false,
   imageShadow = true,
@@ -52,24 +52,24 @@ export default ({
    */
   const defaultFaqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "Which airport is closest to the conference location?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch."
+        "Mangalore International Airport (IXE), located 14 kilometers from the event site."
     },
     {
-      question: "Do you Provide any Accommodation or Travelling Charges?",
+      question: "Do you offer TA and accommodation facilities for the delegates?",
       answer:
-        " It's a self-funded event. No traveling fares are provided."
+        "It's a self funded event. We do not provide TA and accommodation. We can assist in getting nearby accommodation at a reasonable price."
     },
     {
       question: "Is there any registration fee ?",
       answer:
-        "Yes, Rs. 750 will be charged for registration."
+        "Yes, Rs. 750 will be charged for selected delegates as registration fees."
     },
     {
-      question: "Where can I reach you for support ?",
+      question: "Where can I reach you for the support ?",
       answer:
-        "You can add Query in the Contact Form below. or You can Contact us via Mail, Phone Number and Social Media Flatforms"
+        "You can submit a question in the contact form below, or you can reach us by phone, email, or social media."
     }
   ];
 

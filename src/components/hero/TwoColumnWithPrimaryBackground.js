@@ -35,7 +35,7 @@ const Image = tw.img`w-144 ml-auto `;
 
 const Heading = tw(SectionHeading)`max-w-3xl lg:max-w-4xl lg:text-left leading-tight`;
 const Host = tw(SectionHeading)`max-w-3xl text-2xl text-yellow-400 lg:max-w-4xl lg:text-4xl lg:text-left md:text-left`;
-const Presents = tw(SectionHeading)`max-w-3xl text-2xl p-4 lg:max-w-2xl lg:px-32 md:text-left`;
+const Presents = tw(SectionHeading)`max-w-3xl text-2xl p-4 text-blue-300 lg:max-w-2xl lg:px-32 md:text-left`;
 
 
 export default ({
