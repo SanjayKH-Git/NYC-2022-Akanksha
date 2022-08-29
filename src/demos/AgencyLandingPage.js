@@ -10,6 +10,8 @@ import EventInfo from "components/features/TwoColWithButton.js"
 // import Hero from "components/hero/BackgroundAsImage.js";
 import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
 
+import ContactUs from "components/pricing/ThreePlans.js";
+import Eligibilities from "components/pricing/ThreePlansWithHalfPrimaryBackground.js";
 import Highlights from "components/features/DashedBorderSixFeatures";
 import AboutUs from "components/features/TwoColSingleFeatureWithStats2.js";
 import Objectives from "components/features/TwoColWithTwoFeaturesAndButtons.js";
@@ -68,6 +70,7 @@ export default () => {
         watchVideoButtonText="Meet The Chefs"
       />
       {/* <TrailerSection /> */}
+      <Eligibilities /> 
       <Speakers />
       <AboutUs />
       <Highlights />
@@ -129,6 +132,7 @@ export default () => {
           </>
         }
       />
+      <ContactUs />
       <ContactUsForm />
       <Footer />
     </AnimationRevealPage>
