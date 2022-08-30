@@ -8,7 +8,7 @@ import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import { Container as ContainerBase, ContentWithPaddingXl as ContentBase } from "components/misc/Layouts.js";
 import { ReactComponent as CheckboxIcon } from "images/checkbox-circle.svg";
 
-const Container = tw(ContainerBase)`bg-primary-500 text-gray-100 -mx-8 px-8 rounded-t-full`;
+const Container = tw(ContainerBase)`bg-primary-500 text-gray-100 mx-2 px-8 rounded-t-full`;
 const ContentWithPaddingXl = tw(
   ContentBase
 )`relative z-10 mx-auto px-0 py-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 sm:py-20 flex flex-col max-w-screen-xl`;
@@ -19,7 +19,7 @@ const Description = tw(SectionDescription)`w-full text-gray-300 text-center`;
 
 const PlansContainer = tw.div`mt-16 self-center text-gray-900 font-medium`;
 const Plan = styled.div`
-  ${tw`w-full max-w-sm bg-white rounded-lg shadow-2xl py-10 px-6 sm:px-10 lg:px-6 lg:py-10 xl:p-10 mx-3 flex flex-col justify-between mt-16 first:mt-0 lg:mt-0 shadow-raised`}
+  ${tw`w-full max-w-sm bg-white rounded-lg shadow-2xl py-10 px-6 sm:px-10 lg:px-6 lg:py-10 xl:p-10 mx-0 flex flex-col justify-between mt-16 first:mt-3 lg:mt-0 shadow-raised`}
 `;
 
 const PlanHeader = styled.div`

@@ -67,16 +67,8 @@ export default ({
     <Container>
       <TwoColumn>
         <ImageColumn>
-          <Image css={imageCss} src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded}/>
-          {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}
-          <Theme>
-            <b>THEME : </b>
-            <Th>
-              <br>
-              </br>
-            <i> YOUTH AND GOOD GOVERNANCE </i>
-            </Th> 
-          </Theme>
+          <Image tw="hover:rounded-full" css={imageCss} src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded}/>
+          {imageDecoratorBlob && <DecoratorBlob css={imageDecoratorBlobCss} />}          
         </ImageColumn>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>

@@ -39,7 +39,7 @@ const WatchVideoButton = styled.button`
   }
 `;
 
-const IllustrationContainer = tw.div`shadow-2xl rounded-xl flex justify-center md:justify-center items-center relative max-w-3xl lg:max-w-none`;
+const IllustrationContainer = tw.div`shadow-2xl rounded-xl flex justify-center p-3 md:justify-center items-center relative max-w-3xl lg:max-w-none`;
 
 // Random Decorator Blobs (shapes that you see in background)
 const DecoratorBlob1 = styled(SvgDecoratorBlob1)`
@@ -66,12 +66,13 @@ const Features = tw.div`mt-8 max-w-sm mx-auto md:mx-0`;
 const Feature = tw.div`mt-8 flex  flex-col md:flex-row`;
 
 const FeatureIconContainer = styled.div`
-  ${tw`mx-auto inline-block border border-primary-500 text-center rounded-full p-2 flex-shrink-0 justify-center`}
+  ${tw`mx-auto inline-block border border-primary-500 text-center rounded-full p-2 flex-shrink-0 justify-center hover:bg-indigo-500`}
   svg {
     ${tw`w-10 h-10 text-primary-500`}
   }
 `;
-
+const Theme = tw.span`text-blue-600 bg-gray-300 text-xl font-bold px-12 border-4 rounded-full border-purple-700 p-8 inline-block shadow-2xl hover:p-2 delay-300`;
+const HighlightedText = tw.span`bg-primary-500 text-gray-100 text-2xl px-4  p-4 transform  font-extrabold inline-block shadow-2xl rounded-full`;
 const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-center `;
 const FeatureHeading = tw.div`font-bold text-2xl text-primary-500`;
 const FeatureDescription = tw.div`mt-1 text-xl`;
@@ -79,13 +80,13 @@ const FeatureDescription = tw.div`mt-1 text-xl`;
 
 export default ({
   heading = "Modern React Templates, Just For You",
- description="Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.",
-  primaryButtonText="Get Started",
-  primaryButtonUrl="#",
-  watchVideoButtonText="Watch Video",
-  watchVideoYoutubeUrl="https://www.youtube.com/embed/_GuOjXYl5ew",
-  imageSrc=DesignIllustration,
-  imageCss=null,
+  description = "Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.",
+  primaryButtonText = "Get Started",
+  primaryButtonUrl = "#",
+  watchVideoButtonText = "Watch Video",
+  watchVideoYoutubeUrl = "https://www.youtube.com/embed/_GuOjXYl5ew",
+  imageSrc = DesignIllustration,
+  imageCss = null,
   imageDecoratorBlob = false,
   features = null,
 }) => {
@@ -93,7 +94,7 @@ export default ({
 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
-  const defaultFeatures = [    
+  const defaultFeatures = [
     {
       Icon: Date,
       title: "Date",
@@ -103,7 +104,7 @@ export default ({
       Icon: Location,
       title: "Venue",
       description: "Loyola Hall, Mangalore"
-    },    
+    },
     {
       Icon: Time,
       title: "Time",
@@ -117,8 +118,9 @@ export default ({
       {/* <Header /> */}
       <Container>
         <TwoColumn>
-          <LeftColumn>            
-             <Features>
+          <LeftColumn>
+            <Theme>THEME: <HighlightedText>YOUTH AND GOOD GOVERNANCE</HighlightedText></Theme>
+            <Features>
               {features.map((feature, index) => (
                 <Feature key={index}>
                   <FeatureIconContainer>{<feature.Icon />}</FeatureIconContainer>
@@ -127,13 +129,13 @@ export default ({
                     <FeatureDescription>{feature.description}</FeatureDescription>
                   </FeatureText>
                 </Feature>
-             ))}
-             </Features> 
+              ))}
+            </Features>
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.4287265926696!2d74.8431238602065!3d12.873285165867784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4ed85da98b%3A0xf389c1a8da32dc4d!2sVRFV%2B8JP%20Loyola%20Hall%2C%20Hampankatta%2C%20Mangaluru%2C%20Karnataka%20575003!5e1!3m2!1sen!2sin!4v1661454880256!5m2!1sen!2sin"
-                title="Loyola Hall" width="520" height="350" style={{"border":"20px solid;", "border-radius":"20px;" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe tw="rounded-2xl shadow-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.4287265926696!2d74.8431238602065!3d12.873285165867784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4ed85da98b%3A0xf389c1a8da32dc4d!2sVRFV%2B8JP%20Loyola%20Hall%2C%20Hampankatta%2C%20Mangaluru%2C%20Karnataka%20575003!5e1!3m2!1sen!2sin!4v1661454880256!5m2!1sen!2sin"
+                title="Loyola Hall" width="550" height="400" style={{ "border": "20px solid;", "border-radius": "20px;" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               {imageDecoratorBlob && <DecoratorBlob2 />}
             </IllustrationContainer>
           </RightColumn>
@@ -141,7 +143,7 @@ export default ({
         <DecoratorBlob1 />
         <StyledModal
           closeTimeoutMS={300}
-          className="mainHeroModal" 
+          className="mainHeroModal"
           isOpen={modalIsOpen}
           onRequestClose={toggleModal}
           shouldCloseOnOverlayClick={true}
