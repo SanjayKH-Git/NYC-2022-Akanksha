@@ -12,7 +12,7 @@ import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/che
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-2xl mx-auto py-4 lg:py-8`;
+const Content = tw.div`max-w-screen-2xl mx-auto py-4 lg:py-8 py-8`;
 
 const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
 const Heading = tw(SectionHeading)``;
@@ -35,7 +35,7 @@ const CardSlider = styled(Slider)`
     ${tw`h-auto flex justify-center mb-1`}
   }
 `;
-const Card = tw.div`h-full flex! flex-col pr-8 sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none `;
+const Card = tw.div`h-full flex! flex-col  sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none `;
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`w-full h-64 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`
