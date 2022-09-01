@@ -86,7 +86,7 @@ export default ({
         "One should be 17-35 years old.",
         "Only Indian residents can apply.",       
       ],
-      url: "https://google.com",
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSc0LwtYHm7Fl3NEgMGRcuRINRA9q6quRRRjW9jDY3UTxK7gPw/viewform",
       featured: "Important *"
     },   
   ];
