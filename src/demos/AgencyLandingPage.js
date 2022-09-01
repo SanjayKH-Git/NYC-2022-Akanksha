@@ -70,7 +70,7 @@ export default () => {
         primaryButtonText="Order Now"
         watchVideoButtonText="Meet The Chefs"
       />
-      <TrailerSection />
+      {/* <TrailerSection /> */}
       <Eligibilities /> 
       <Speakers />
       <AboutUs />
