@@ -32,7 +32,7 @@ const CardSlider = styled(Slider)`
     ${tw`flex`}
   }
   .slick-slide {
-    ${tw`h-auto flex justify-center mb-1`}
+    ${tw`h-auto flex justify-center mb-1 space-x-8`}
   }
 `;
 const Card = tw.div`h-full flex! flex-col  sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none `;
