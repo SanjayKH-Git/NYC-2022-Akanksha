@@ -12,7 +12,7 @@ import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/che
 import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 const Container = tw.div`relative`;
-const Content = tw.div`max-w-screen-2xl mx-auto py-4 lg:py-8 py-8`;
+const Content = tw.div`max-w-screen-2xl mx-auto py-32 lg:py-8 `;
 
 const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm:flex-row justify-between`;
 const Heading = tw(SectionHeading)``;
@@ -68,7 +68,7 @@ const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 66.25% !important;
   padding-top: 60px !important;
-  ${tw`rounded-lg w-96`}
+  ${tw`rounded-lg w-96 p-32`}
   iframe {
     ${tw`rounded-lg bg-black shadow-xl `}
   }
