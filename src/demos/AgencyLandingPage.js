@@ -4,6 +4,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 // import countDown from "components/features/daisyCountDown.js"
+import NYCVideos from "components/cards/ThreeColSlider.js"
 import TrailerSection from "components/features/TrailerSection.js"
 import Details from "components/hero/TwoColumnWithVideo.js"
 import EventInfo from "components/features/TwoColWithButton.js"
@@ -69,11 +70,12 @@ export default () => {
         primaryButtonText="Order Now"
         watchVideoButtonText="Meet The Chefs"
       />
-      {/* <TrailerSection /> */}
+      <TrailerSection />
       <Eligibilities /> 
       <Speakers />
       <AboutUs />
       <Highlights />
+      <NYCVideos />
       {/* <Portfolio /> */}
       <Testimonial
         subheading="Testimonials"
