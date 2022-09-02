@@ -10,7 +10,8 @@ export default ({ url, background="black", className="video" }) => {
         background: background,
         paddingBottom: "56.25%" /* 16:9 */,
         paddingTop: 25,
-        height: 0
+        height: 0,
+        paddingRight:5,
       }}
     >
       <iframe
@@ -23,7 +24,7 @@ export default ({ url, background="black", className="video" }) => {
           height: "100%"
         }}
         src={url}
-        frameBorder="0"
+        frameBorder="10"
       />
     </div>
   );

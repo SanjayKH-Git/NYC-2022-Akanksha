@@ -35,7 +35,7 @@ const CardSlider = styled(Slider)`
     ${tw`h-auto flex justify-center mb-1 space-x-32`}
   }
 `;
-const Card = tw.div`h-full flex! flex-col  p-8 sm:border max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none `;
+const Card = tw.div`h-full flex! flex-col  p-8 sm:border  relative focus:outline-none `;
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`w-full h-64 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`
@@ -65,12 +65,9 @@ const IconContainer = styled.div`
 `;
 const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
 
-const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
-  padding-bottom: 66.25% !important;
-  padding-top: 60px !important;
-  ${tw`rounded-lg w-64`}
+const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`    
   iframe {
-    ${tw`rounded-lg bg-black shadow-xl `}
+    ${tw`rounded-lg bg-black shadow-xl`}
   }
 `;
 
