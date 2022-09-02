@@ -2,6 +2,7 @@ import React from "react";
 import tw from "twin.macro"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import ImageGallery from 'react-image-gallery';
 
 // import countDown from "components/features/daisyCountDown.js"
 import NYCVideos from "components/cards/ThreeColSlider.js"
@@ -31,6 +32,54 @@ export default () => {
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
+
+  // const ImageGallery = tw`rounded-2xl`
+  const images = [
+    {
+      original: 'https://1ngo.in/media/akanksha/82882867_2925243800853875_1050403263771312128_n.jpg',
+      thumbnail: 'https://1ngo.in/media/akanksha/82882867_2925243800853875_1050403263771312128_n.jpg',
+    },
+    {
+      original: 'https://drive.google.com/file/d/1e3wjquZ9Yiv-TS6ygDaClbMAPTk1IQMc/view',
+      thumbnail: 'https://drive.google.com/file/d/1e3wjquZ9Yiv-TS6ygDaClbMAPTk1IQMc/view',
+    },
+    {
+      original: 'https://1ngo.in/media/akanksha/82191462_2925244354187153_2404592098419408896_n.jpg',
+      thumbnail: 'https://1ngo.in/media/akanksha/82191462_2925244354187153_2404592098419408896_n.jpg',
+    },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
+    },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
+    },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
+    },
+    // {
+    //   original: '',
+    //   thumbnail: ,
+    // },
+    // {
+    //   original: ,
+    //   thumbnail: ,
+    // },
+    // {
+    //   original: ,
+    //   thumbnail: ,
+    // },
+    // {
+    //   original: ,
+    //   thumbnail: ,
+    // },
+    // {
+    //   original: ,
+    //   thumbnail: ,
+    // },
+  ];
 
   return (
     <AnimationRevealPage>
@@ -136,6 +185,7 @@ export default () => {
       />
       <ContactUs />
       <ContactUsForm />
+      <ImageGallery items={images} />
       <Footer />
     </AnimationRevealPage>
   );

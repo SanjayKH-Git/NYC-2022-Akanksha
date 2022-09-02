@@ -1,5 +1,5 @@
 /* Below animations are fore modal created using React-Modal */
-
+@import "~react-image-gallery/styles/css/image-gallery.css";
 #root{
     background-color: rgb(223, 210, 250)  ;
 }

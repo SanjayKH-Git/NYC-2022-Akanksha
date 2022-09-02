@@ -53,7 +53,8 @@ const RatingsInfo = styled.div`
 `;
 const Rating = tw.span`ml-2 font-bold`;
 
-const Description = tw.p`text-sm leading-loose mt-2 sm:mt-4`;
+const Description = tw.p`text-sm text-center leading-loose mt-2 sm:mt-4`;
+
 
 const SecondaryInfoContainer = tw.div`flex flex-col sm:flex-row mt-2 sm:mt-4`;
 const IconWithText = tw.div`flex items-center mr-6 my-2 sm:my-0`;
@@ -103,7 +104,7 @@ export default () => {
     {
       yturl: "https://www.youtube.com/embed/HXgwoK1Dz1A",
       title: "NYC  2020 Day 1            ",
-      description: "",
+      description: "<-- Slide -->",
       locationText: "",
       pricingText: "",
       rating: 4.9,
@@ -111,7 +112,7 @@ export default () => {
     {
       yturl: "https://www.youtube.com/embed/0zHOOMvdOio",
       title: "NYC  2020 Day 2",
-      description: "",
+      description: "<-- Slide -->",
       locationText: "",
       pricingText: "",
       rating: "4.8",
@@ -120,7 +121,7 @@ export default () => {
     {
       yturl: "https://www.youtube.com/embed/tp20jNcHLaI",
       title: "NYC  2020 Day 3",
-      description: "",
+      description: "<- - Slide - ->",
       locationText: "",
       pricingText: "",
       rating: "4.8",
