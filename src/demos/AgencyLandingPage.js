@@ -3,6 +3,7 @@ import tw from "twin.macro"; //eslint-disable-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import ImageGallery from 'react-image-gallery';
+import { SectionHeading } from "components/misc/Headings.js";
 
 // import countDown from "components/features/daisyCountDown.js"
 import NYCVideos from "components/cards/ThreeColSlider.js"
@@ -32,6 +33,7 @@ export default () => {
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
   const Description = tw.span`inline-block mt-8`;
   const imageCss = tw`rounded-4xl`;
+  const Heading = tw(SectionHeading)`mt-4 font-black mb-10 text-center text-2xl sm:text-3xl lg:text-4xl text-center md:text-center leading-tight`;
 
   // const ImageGallery = tw`rounded-2xl`
   const images = [
@@ -40,45 +42,53 @@ export default () => {
       thumbnail: 'https://1ngo.in/media/akanksha/82882867_2925243800853875_1050403263771312128_n.jpg',
     },
     {
-      original: 'https://drive.google.com/file/d/1e3wjquZ9Yiv-TS6ygDaClbMAPTk1IQMc/view',
-      thumbnail: 'https://drive.google.com/file/d/1e3wjquZ9Yiv-TS6ygDaClbMAPTk1IQMc/view',
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/37f62acb-902f-425f-b645-90d7f08bdee7.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/37f62acb-902f-425f-b645-90d7f08bdee7.JPG',
     },
     {
-      original: 'https://1ngo.in/media/akanksha/82191462_2925244354187153_2404592098419408896_n.jpg',
-      thumbnail: 'https://1ngo.in/media/akanksha/82191462_2925244354187153_2404592098419408896_n.jpg',
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/56484573-3fe7-445a-8d9c-ae8442845c43.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/56484573-3fe7-445a-8d9c-ae8442845c43.JPG',
     },
     {
-      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
-      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/37da203b-6c0e-4cae-ac84-87ba59611de7.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/37da203b-6c0e-4cae-ac84-87ba59611de7.JPG',
     },
     {
-      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
-      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/7cc260b4-990a-4362-b523-b99082ced16f.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/7cc260b4-990a-4362-b523-b99082ced16f.JPG',
     },
     {
-      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
-      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/Logos/ACT_Logo_White.png',
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/057db088-489f-4357-b15a-213d0d60d9e2.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/057db088-489f-4357-b15a-213d0d60d9e2.JPG',
     },
-    // {
-    //   original: '',
-    //   thumbnail: ,
-    // },
-    // {
-    //   original: ,
-    //   thumbnail: ,
-    // },
-    // {
-    //   original: ,
-    //   thumbnail: ,
-    // },
-    // {
-    //   original: ,
-    //   thumbnail: ,
-    // },
-    // {
-    //   original: ,
-    //   thumbnail: ,
-    // },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/209564ed-f0ef-451b-8d6e-c4623978c1b9.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/209564ed-f0ef-451b-8d6e-c4623978c1b9.JPG',
+    },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/a3ff75a1-e1bc-46f1-89bc-3706bb5c0e3d.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/a3ff75a1-e1bc-46f1-89bc-3706bb5c0e3d.JPG',
+    },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/d342adb7-c2ea-4e88-930a-9cc450d8f303.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/d342adb7-c2ea-4e88-930a-9cc450d8f303.JPG',
+    },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/f12cf34b-02e2-48c4-b6cb-a7a8884cd837.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/d293bf64acfc25961a414d77bfb92a3e5c771068/src/images/NYC%20pics/f12cf34b-02e2-48c4-b6cb-a7a8884cd837.JPG',
+    },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/fda33626-edf4-496c-9c86-39731dcd3095.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/fda33626-edf4-496c-9c86-39731dcd3095.JPG',
+    },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/d410899f-2ed6-42c3-ae5c-be3df342b53f.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/d410899f-2ed6-42c3-ae5c-be3df342b53f.JPG',
+    },
+    {
+      original: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/d5da1b9e-07d9-42e3-abc2-90dc4c8694fc.JPG',
+      thumbnail: 'https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/NYC%20pics/d5da1b9e-07d9-42e3-abc2-90dc4c8694fc.JPG',
+    },
   ];
 
   return (
@@ -89,15 +99,15 @@ export default () => {
         subheading={<Subheading>Description</Subheading>}
         heading={
           <>
-           About this Event
+            About this Event
             {/* <br /> <HighlightedText>NYC-2022.</HighlightedText> */}
           </>
         }
         description={
           <Description>
-           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India is a country teeming in youth with 70% of people below the age of 40 years. While 34% of India’s Gross National Income is contributed by the youth; there is a dire need to develop this percentage. In fact, the youth today is a major resource for not only development of financial prosperity but for social changes as well. The development of youth leadership is critical to building civic capacity and long term community sustainability. When youth develop such skills, we establish capable, effective leaders for the next generation.</p>
-           <br></br>
-   	       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Having realized this, "AKANKSHA CHARITABLE TRUST [ACT]" is organizing this momentous event – NATIONAL YOUTH CONFERENCE 2022. The NYC-2022 is a platform to discuss, disseminate and deliberate on the possible plans, targets and solutions which must be generated and implemented by our youth in order to enhance their effective participation and role in nation building. The theme of the convention is “YOUTH & GOOD GOVERNANCE”. With the inculcation of youth empowerment, the youth can reject the status quo and pave a path for a better future. Today the youth is claiming his right to decent living by willing to take risks which helps in the development of leadership skills. To build a better tomorrow, we need to nurture the saplings of today. Hence, a radical government which is pro-people comes from harnessing bright minds, capable of taking the nation into a brighter future.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India is a country teeming in youth with 70% of people below the age of 40 years. While 34% of India’s Gross National Income is contributed by the youth; there is a dire need to develop this percentage. In fact, the youth today is a major resource for not only development of financial prosperity but for social changes as well. The development of youth leadership is critical to building civic capacity and long term community sustainability. When youth develop such skills, we establish capable, effective leaders for the next generation.</p>
+            <br></br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Having realized this, "AKANKSHA CHARITABLE TRUST [ACT]" is organizing this momentous event – NATIONAL YOUTH CONFERENCE 2022. The NYC-2022 is a platform to discuss, disseminate and deliberate on the possible plans, targets and solutions which must be generated and implemented by our youth in order to enhance their effective participation and role in nation building. The theme of the convention is “YOUTH & GOOD GOVERNANCE”. With the inculcation of youth empowerment, the youth can reject the status quo and pave a path for a better future. Today the youth is claiming his right to decent living by willing to take risks which helps in the development of leadership skills. To build a better tomorrow, we need to nurture the saplings of today. Hence, a radical government which is pro-people comes from harnessing bright minds, capable of taking the nation into a brighter future.</p>
           </Description>
         }
         buttonRounded={false}
@@ -110,17 +120,17 @@ export default () => {
         imageDecoratorBlob={true}
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
-       <Details
+      <Details
         heading={<>THEME: <HighlightedText>YOUTH AND GOOD GOVERNANCE</HighlightedText>, Mangalore</>}
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        imageSrc= "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         imageCss={imageCss}
         imageDecoratorBlob={true}
         primaryButtonText="Order Now"
         watchVideoButtonText="Meet The Chefs"
       />
       {/* <TrailerSection /> */}
-      <Eligibilities /> 
+      <Eligibilities />
       <Speakers />
       <AboutUs />
       <Highlights />
@@ -179,12 +189,13 @@ export default () => {
         subheading="FAQs"
         heading={
           <>
-           Frequently Asked <span tw="text-primary-500">Questions</span>
+            Frequently Asked <span tw="text-primary-500">Questions</span>
           </>
         }
       />
       <ContactUs />
       <ContactUsForm />
+      <Heading>NYC Moments ❤</Heading>
       <ImageGallery items={images} />
       <Footer />
     </AnimationRevealPage>
