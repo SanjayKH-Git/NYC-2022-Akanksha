@@ -68,7 +68,7 @@ const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
 const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
   padding-bottom: 66.25% !important;
   padding-top: 60px !important;
-  ${tw`rounded-lg w-80`}
+  ${tw`rounded-lg w-64`}
   iframe {
     ${tw`rounded-lg bg-black shadow-xl `}
   }
