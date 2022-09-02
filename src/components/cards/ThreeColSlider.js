@@ -18,7 +18,7 @@ const HeadingWithControl = tw.div`flex flex-col items-center sm:items-stretch sm
 const Heading = tw(SectionHeading)``;
 const Controls = tw.div`flex items-center`;
 const ControlButton = styled(PrimaryButtonBase)`
-  ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-4`}
+  ${tw`mt-4 sm:mt-0 first:ml-0 ml-6 rounded-full p-2`}
   svg {
     ${tw`w-6 h-6`}
   }
@@ -32,10 +32,10 @@ const CardSlider = styled(Slider)`
     ${tw`flex`}
   }
   .slick-slide {
-    ${tw`h-auto flex justify-center mb-1 space-x-32`}
+    ${tw`h-auto flex justify-center mb-1 space-x-8`}
   }
 `;
-const Card = tw.div`h-full flex! flex-col  p-8 sm:border  relative focus:outline-none `;
+const Card = tw.div`h-full flex! flex-col  p-10 sm:border max-w-5xl w-144 sm:rounded-tl-4xl sm:rounded-br-5xl relative focus:outline-none `;
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");`,
   tw`w-full h-64 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`
@@ -65,9 +65,12 @@ const IconContainer = styled.div`
 `;
 const Text = tw.div`ml-2 text-sm font-semibold text-gray-800`;
 
-const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`    
+const StyledResponsiveVideoEmbed = styled(ResponsiveVideoEmbed)`
+  padding-bottom: 66.25% !important;
+  padding-top: 60px !important;
+  ${tw`rounded-lg w-80`}
   iframe {
-    ${tw`rounded-lg bg-black shadow-xl`}
+    ${tw`rounded-lg bg-black shadow-xl `}
   }
 `;
 
@@ -82,7 +85,7 @@ export default () => {
       {
         breakpoint: 1280,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
         }
       },
 

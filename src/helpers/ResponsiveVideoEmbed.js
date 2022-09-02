@@ -21,10 +21,11 @@ export default ({ url, background="black", className="video" }) => {
           top: 0,
           left: 0,
           width: "100%",
-          height: "100%"
+          height: "100%"          
         }}
         src={url}
-        frameBorder="10"
+        allowfullscreen="allowfullscreen"
+        frameBorder="0"
       />
     </div>
   );
