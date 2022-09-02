@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.85c0f750.css",
-    "main.js": "/static/js/main.7d12ad9a.js",
+    "main.js": "/static/js/main.060f5722.js",
     "static/media/ACT_Logo_White.png": "/static/media/ACT_Logo_White.fd3af98b932384f1b677.png",
     "static/media/MainLandingPageHero.png": "/static/media/MainLandingPageHero.30b380787ef7adb09eb6.png",
     "static/media/Group_Discussion4.png": "/static/media/Group_Discussion4.ee5e318ea2f3f14f5179.png",
@@ -111,10 +111,10 @@
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.d415f77e8dc81ff77fdb53c0ee2da771.svg",
     "static/media/handle-icon.svg": "/static/media/handle-icon.75eb6395a03cd55833f64fd24df39ff5.svg",
     "main.85c0f750.css.map": "/static/css/main.85c0f750.css.map",
-    "main.7d12ad9a.js.map": "/static/js/main.7d12ad9a.js.map"
+    "main.060f5722.js.map": "/static/js/main.060f5722.js.map"
   },
   "entrypoints": [
     "static/css/main.85c0f750.css",
-    "static/js/main.7d12ad9a.js"
+    "static/js/main.060f5722.js"
   ]
 }
