@@ -59,9 +59,9 @@ export default ({
       <NavLink target="_blank" href="https://akanksha.1ngo.in/">
         ACT Events
       </NavLink>
-      <NavLink href="/AboutUs">
+      {/* <NavLink href="/AboutUs">
         About Us
-      </NavLink>
+      </NavLink> */}
       <NavLink target="_blank" href="https://goyes.akankshatrust.in/">
        GOYES 2021
       </NavLink>
