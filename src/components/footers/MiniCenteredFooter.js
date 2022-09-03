@@ -72,7 +72,7 @@ export default () => {
               <ACT>
                 <a target="_blank" href="https://akanksha.1ngo.in/" tw="text-yellow-500">Akanksha Charitable Trust(R.)</a>
               </ACT>
-            </strong>.<br></br> All Rights Reserved.                            
+            </strong><br></br> All Rights Reserved.                            
           </CopyrightText>
           <LogoContainer>
             <a target="_blank" href="https://akanksha.1ngo.in/">

@@ -56,10 +56,10 @@ export default ({
       <NavLink href="/">
         Home
       </NavLink>
-      <NavLink target="_blank" href="https://www.facebook.com/nammaakanksha/">
+      <NavLink target="_blank" href="https://akanksha.1ngo.in/">
         ACT Events
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="/AboutUs">
         About Us
       </NavLink>
       <NavLink target="_blank" href="https://goyes.akankshatrust.in/">
