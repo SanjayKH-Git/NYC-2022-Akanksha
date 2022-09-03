@@ -70,7 +70,7 @@ export default () => {
             &copy; Copyright <br></br>
             <strong>
               <ACT>
-                <a target="_blank" href="https://akanksha.1ngo.in/" tw="text-yellow-500">Akanksha Charitable Trust</a>
+                <a target="_blank" href="https://akanksha.1ngo.in/" tw="text-yellow-500">Akanksha Charitable Trust(R.)</a>
               </ACT>
             </strong>.<br></br> All Rights Reserved.                            
           </CopyrightText>
