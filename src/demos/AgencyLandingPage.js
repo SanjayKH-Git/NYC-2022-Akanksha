@@ -94,7 +94,7 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero />
-      <Objectives />
+      <Objectives />      
       <EventInfo
         subheading={<Subheading>Description</Subheading>}
         heading={
@@ -182,7 +182,7 @@ export default () => {
         ]}
         textOnLeft={true}
       />
-      <FAQ
+      <FAQ id="faq"
         imageSrc={customerSupportIllustrationSrc}
         imageContain={true}
         imageShadow={false}

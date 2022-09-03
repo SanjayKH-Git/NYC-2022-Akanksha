@@ -26,7 +26,7 @@ const SocialLinksContainer = tw.div`mt-10`;
 const SocialLink = styled.a`
   ${tw`cursor-pointer inline-block text-gray-100 hover:text-gray-500 transition duration-300 mx-4`}
   svg {
-    ${tw`w-8 h-8`}
+    ${tw`w-10 h-10`}
   }
 `;
 
@@ -45,13 +45,13 @@ export default () => {
             <LogoImg src={logo} />
             <LogoText>NYC-2022</LogoText>
           </LogoContainer>
-          <LinksContainer>
+          {/* <LinksContainer>
             <Link href="#">Home</Link>
-            <Link href="#">About Us</Link>
+            <Link href="/faq">About Us</Link>
             <Link href="#">Contact Us</Link>
             <Link href="#">Higlights of NYC-2021 & GOYES 2021</Link>
             <Link href="#">FAQ</Link>
-          </LinksContainer>
+          </LinksContainer> */}
           <SocialLinksContainer>
             <SocialLink target="_blank" rel="noreferrer" href="https://www.facebook.com/nammaakanksha/">
               <FacebookIcon />

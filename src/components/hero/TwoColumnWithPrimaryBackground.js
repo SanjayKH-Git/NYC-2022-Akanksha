@@ -53,17 +53,17 @@ export default ({
   );
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="">
-        About Event
+      <NavLink href="/">
+        Home
       </NavLink>
-      <NavLink href="MainFeature">
+      <NavLink target="_blank" href="https://www.facebook.com/nammaakanksha/">
         ACT Events
       </NavLink>
       <NavLink href="#">
         About Us
       </NavLink>
-      <NavLink href="#">
-        NYC Highlights
+      <NavLink target="_blank" href="https://goyes.akankshatrust.in/">
+       GOYES 2021
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
