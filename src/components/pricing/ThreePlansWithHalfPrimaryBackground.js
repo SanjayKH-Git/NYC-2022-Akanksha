@@ -83,7 +83,7 @@ export default ({
       description: "",
       features: [
         "One should hold English language proficiency.",
-        "One should be 17-35 years old.",
+        "One should be 18-35 years old.",
         "Only Indian residents can apply.",       
       ],
       url: "https://docs.google.com/forms/d/e/1FAIpQLSc0LwtYHm7Fl3NEgMGRcuRINRA9q6quRRRjW9jDY3UTxK7gPw/viewform",
