@@ -41,22 +41,23 @@ export default () => {
         <FormContainer>
           <div tw="mx-auto max-w-4xl">
             <h2>Reach out Us</h2>
-            <form action="#">
+            <form name="contact v1" netlify netlify-honeypot="bot-field" method="POST" onSubmit="submit">
               <TwoColumn>
                 <Column>
+                  <input type="hidden" name="form-name" value="contact v1"/>
                   <InputContainer>
                     <Label htmlFor="name-input">Your Name</Label>
-                    <Input id="name-input" type="text" name="name" placeholder="E.g. Avinash D" />
+                    <Input id="name-input" type="text" name="name" placeholder="E.g. Avinash D" required/>
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="email-input">Your Email Address</Label>
-                    <Input id="email-input" type="email" name="email" placeholder="E.g. avinashd@mail.com" />
+                    <Input id="email-input" type="email" name="email" placeholder="E.g. avinashd@mail.com" required/>
                   </InputContainer>
                 </Column>
                 <Column>
                   <InputContainer tw="flex-1">
                     <Label htmlFor="name-input">Your Message</Label>
-                    <TextArea id="message-input" name="message" placeholder="E.g. Details about your Feedbacks or Query✍"/>
+                    <TextArea id="message-input" name="message" placeholder="E.g. Details about your Feedbacks or Query✍" required/>
                   </InputContainer>
                 </Column>
               </TwoColumn>
