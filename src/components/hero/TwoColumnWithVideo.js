@@ -75,7 +75,7 @@ const Theme = tw.span`text-blue-600 bg-gray-300 text-xl font-bold px-12 border-4
 const HighlightedText = tw.span`bg-primary-500 text-gray-100 text-2xl px-4  p-4 transform  font-extrabold inline-block shadow-2xl rounded-full`;
 const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-center `;
 const FeatureHeading = tw.div`font-bold text-2xl text-primary-500`;
-const FeatureDescription = tw.div`mt-1 text-xl`;
+const FeatureDescription = tw.div`mt-1 text-xl font-bold whitespace-pre-wrap`;
 
 
 export default ({
@@ -103,12 +103,12 @@ export default ({
     {
       Icon: Location,
       title: "Venue",
-      description: "Mangalore"
+      description: "\t\t\t\tMangalore\t\t\t\t"
     },
     {
       Icon: Time,
       title: "Time",
-      description: "9:30 AM-4:30 PM IST"
+      description: "\t9:30 AM-4:30 PM IST\t"
     }
   ];
   if (!features) features = defaultFeatures;
