@@ -57,7 +57,7 @@ export default ({
         Home
       </NavLink>
       <NavLink target="_blank" href="https://akanksha.1ngo.in/">
-        ACT Events
+        About ACT
       </NavLink>
       {/* <NavLink href="/AboutUs">
         About Us

@@ -103,7 +103,7 @@ export default () => {
   const cards = [
     {
       yturl: "https://www.youtube.com/embed/HXgwoK1Dz1A",
-      title: "NYC  2021 Day 1            ",
+      title: "NYC  2020 Day 1            ",
       description: "<-- Slide -->",
       locationText: "",
       pricingText: "",
@@ -111,7 +111,7 @@ export default () => {
     },
     {
       yturl: "https://www.youtube.com/embed/0zHOOMvdOio",
-      title: "NYC  2021 Day 2",
+      title: "NYC  2020 Day 2",
       description: "<-- Slide -->",
       locationText: "",
       pricingText: "",
@@ -120,7 +120,7 @@ export default () => {
 
     {
       yturl: "https://www.youtube.com/embed/tp20jNcHLaI",
-      title: "NYC  2021 Day 3",
+      title: "NYC  2021 Day 1",
       description: "<- - Slide - ->",
       locationText: "",
       pricingText: "",
