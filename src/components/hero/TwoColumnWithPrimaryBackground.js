@@ -29,7 +29,7 @@ const Row = tw.div`flex items-center flex-col lg:flex-row`;
 const Column = tw.div`lg:w-1/2`;
 const TextColumn = tw.div`text-center lg:text-left`;
 const IllustrationColumn = tw(Column)`mt-8 lg:mt-0 lg:ml-8`;
-const Description = tw(SectionDescription)`mt-4 max-w-2xl text-gray-100 lg:text-base mx-auto lg:mx-0`;
+const Description = tw(SectionDescription)`mt-4 max-w-2xl text-red-400 lg:text-base mx-auto lg:mx-0`;
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 mb-16 text-sm sm:text-base px-6 py-5 sm:px-10 sm:py-5 bg-primary-400 inline-block hocus:bg-primary-500 shadow-2xl`;
 const Image = tw.img`w-144 ml-auto `;
 
@@ -40,7 +40,7 @@ const Presents = tw(SectionHeading)`max-w-3xl text-2xl p-4 text-blue-300 lg:max-
 
 export default ({
   heading = "NATIONAL YOUTH CONFERENCE 2022",
-  description = "Our cloud provisions the best servers, with fast SSD, powerful Xeon Processors, whenever you need it. Oh, and we have 99.9% SLA",
+  description = "* Last Date to Apply:",
   primaryButtonText = "Apply Now",
   primaryButtonUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc0LwtYHm7Fl3NEgMGRcuRINRA9q6quRRRjW9jDY3UTxK7gPw/viewform?usp=sf_link",
   imageSrc = serverIllustrationImageSrc,
@@ -85,10 +85,10 @@ export default ({
                 </Host>
                 <Presents>Presents</Presents>
                 <Heading>
-                  <Typewriter
+                  <Typewriter                  
                     onInit={(typewriter) => {
-                      typewriter.typeString("NATIONAL YOUTH CONFERENCE 2022")
-                        .pauseFor(1200)
+                      typewriter.typeString("NATIONAL YOUTH CONFERENCE 2022")                       
+                        .pauseFor(1000)
                         .deleteAll()
                       typewriter.typeString("TIME TO ACT!")
                         .pauseFor(1200)
@@ -99,9 +99,11 @@ export default ({
                     }}
                   />
                 </Heading>
-                {/* <Description>{description}</Description> */}
                 <PrimaryButton as="a" rel="noreferrer" target="_blank" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
+                <Description>{description} <span tw="text-indigo-200">31st October, 2022</span></Description>
+
               </TextColumn>
+              
               <IllustrationColumn>
                 <Image src={imageSrc} />
               </IllustrationColumn>
