@@ -103,7 +103,7 @@ export default ({
     {
       Icon: Location,
       title: "Venue",
-      description: "Loyola Hall, Mangalore"
+      description: "Mangalore"
     },
     {
       Icon: Time,

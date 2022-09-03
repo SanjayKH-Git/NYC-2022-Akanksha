@@ -43,7 +43,7 @@ export default ({
   subheading = "ABOUT US",
   heading = (
     <h4>
-      We have been doing Activities <br /> since <span tw="text-primary-500">2012.</span>
+      We have been doing Activities <br /> since <span tw="text-primary-500">2012</span>
     </h4>
   ),
   description = "An investment in knowledge always pays the best interest. Education helps improve the knowledge and unfortunately, in India we have many children who have been deprived of the quality education due to various reasons. Akanksha was idea of a group of friends who believed that \"Knowledge never decreases by being shared\" and wanted to help the children of rural government schools in getting good education and they lack the necessary knowledge. Team Akansha started its journey in 2012 and was brought under the banner of Akanksha Charitable Trust in 2014. An initiative started by a group of friends is now a strong team of 172 volunteers who come with similar thoughts of sharing the knowledge to children and helping them secure a bright future. Akanksha Charitable Trust is now also striving towards enhancing the skills of the youth and making them capable enough to be career oriented and reach their aspirations. Activities conducted include National Youth Conference, Regional Youth Conference, internship programmes, hands on workshop and so on. Akanksha Charitable Trust has been helping the children and youth of Dakshina Kannada and Udupi districts all these and is striving hard to reach out to more and more needy students.",
