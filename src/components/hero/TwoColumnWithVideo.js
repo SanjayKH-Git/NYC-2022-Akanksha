@@ -119,7 +119,7 @@ export default ({
       <Container>
         <TwoColumn>
           <LeftColumn>
-            <Theme>THEME: <HighlightedText>YOUTH AND GOOD GOVERNANCE</HighlightedText></Theme>
+            <Theme>THEME: <HighlightedText>Role of Youth in Governance-Focus on Achieving SDGs by 2030</HighlightedText></Theme>
             <Features>
               {features.map((feature, index) => (
                 <Feature key={index}>

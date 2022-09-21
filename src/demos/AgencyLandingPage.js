@@ -121,7 +121,7 @@ export default () => {
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
       <Details
-        heading={<>THEME: <HighlightedText>YOUTH AND GOOD GOVERNANCE</HighlightedText>, Mangalore</>}
+        heading={<>THEME: <HighlightedText>Role of Youth in Governance-Focus on Achieving SDGs by 2030</HighlightedText>, Mangalore</>}
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
         imageCss={imageCss}
