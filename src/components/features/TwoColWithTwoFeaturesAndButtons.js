@@ -27,7 +27,7 @@ const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(
   SectionHeading
 )`mt-4 font-black text-left text-2xl sm:text-3xl lg:text-4xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-4 text-justify md:text-justify text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-400`;
+const Description = tw.p`mt-4 text-justify md:text-justify p-3 border-solid border-4 border-indigo-600 mix-blend-darken text-indigo-300 bg-primary-800 rounded-xl shadow-2xl text-lg md:text-base lg:text-lg font-medium leading-relaxed`;
 
 const Features = tw.div`mt-8 max-w-sm mx-auto md:mx-0`;
 const Feature = tw.div`mt-8 flex items-start flex-col md:flex-row`;

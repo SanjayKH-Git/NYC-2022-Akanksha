@@ -141,7 +141,7 @@ export default () => {
         textOnLeft={false}
         primaryButtonText="Latest Offers"
         imageSrc={
-          require("../images/Logos/NYC_Logo_Big.png")
+          require("../images/Logos/SDG.png")
         }
         imageCss={imageCss}
         imageDecoratorBlob={true}

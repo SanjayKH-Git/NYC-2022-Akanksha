@@ -17,9 +17,9 @@ const TextColumn = styled(Column)(props => [
 ]);
 
 const Image = styled.img(props => [
-  props.imageRounded && tw`rounded`,
-  props.imageBorder && tw`border-8 border-primary-500`,
-  props.imageShadow && tw`shadow-2xl`,
+  props.imageRounded && tw`rounded bg-gray-800`,
+  props.imageBorder && tw` p-4 border-4 border-primary-500`,
+  props.imageShadow && tw`shadow-inner`,
 ]);
 
 const DecoratorBlob = styled(SvgDotPattern)(props => [
@@ -31,7 +31,7 @@ const Theme = tw.b`pt-24 px-4 inline-block`;
 const Th = tw.i`text-blue-900 font-extrabold px-0  p-0 pt-32 text-left`;
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(SectionHeading)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-4 text-justify p-3 border-solid border-2 border-primary-500 bg-secondary-800 rounded-md shadow-2xl md:text-justify text-lg md:text-base lg:text-xl font-medium leading-relaxed text-purple-800`;
+const Description = tw.p`mt-4 text-justify p-3 border-solid border-8 hover:border-4 border-purple-600 text-blue-300 bg-purple-800 rounded-lg shadow-2xl md:text-justify text-lg md:text-base lg:text-xl font-medium leading-relaxed `;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
   tw`mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`,
