@@ -71,8 +71,8 @@ const FeatureIconContainer = styled.div`
     ${tw`w-10 h-10 text-primary-500`}
   }
 `;
-const Theme = tw.span`text-blue-600 bg-gray-300 text-xl font-bold px-12 border-4 rounded-full border-purple-700 p-8 inline-block shadow-2xl hover:p-2 delay-300`;
-const HighlightedText = tw.span`bg-primary-500 text-gray-100 text-2xl px-4  p-4 transform  font-extrabold inline-block shadow-2xl rounded-full`;
+const Theme = tw.span`text-blue-600 bg-gray-300 text-xl text-center font-bold px-12 border-4 rounded-full border-purple-700 p-4 inline-block shadow-2xl hover:p-2 delay-300`;
+const HighlightedText = tw.span`bg-primary-500 text-gray-100 text-left text-xl lg:text-3xl tracking-wider px-4  p-8 transform  font-extrabold inline-block shadow-2xl rounded-full`;
 const FeatureText = tw.div`mt-4 md:mt-0 md:ml-4 text-center md:text-center `;
 const FeatureHeading = tw.div`font-bold text-2xl text-primary-500`;
 const FeatureDescription = tw.div`mt-1 text-xl font-bold whitespace-pre-wrap`;
@@ -119,7 +119,7 @@ export default ({
       <Container>
         <TwoColumn>
           <LeftColumn>
-            <Theme>THEME: <HighlightedText>Role of Youth in Governance-Focus on Achieving SDGs by 2030</HighlightedText></Theme>
+            <Theme>THEME <br></br> <HighlightedText>Role of Youth in Governance - Focus on Achieving SDGs by 2030</HighlightedText></Theme>
             <Features>
               {features.map((feature, index) => (
                 <Feature key={index}>

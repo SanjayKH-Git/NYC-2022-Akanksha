@@ -31,7 +31,7 @@ const Theme = tw.b`pt-24 px-4 inline-block`;
 const Th = tw.i`text-blue-900 font-extrabold px-0  p-0 pt-32 text-left`;
 const Subheading = tw(SubheadingBase)`text-center md:text-left`;
 const Heading = tw(SectionHeading)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-4 text-justify md:text-justify text-lg md:text-base lg:text-xl font-medium leading-relaxed text-purple-800`;
+const Description = tw.p`mt-4 text-justify p-3 border-solid border-2 border-primary-500 bg-indigo-800 rounded-md shadow-2xl md:text-justify text-lg md:text-base lg:text-xl font-medium leading-relaxed text-purple-800`;
 
 const PrimaryButton = styled(PrimaryButtonBase)(props => [
   tw`mt-8 md:mt-8 text-sm inline-block mx-auto md:mx-0`,

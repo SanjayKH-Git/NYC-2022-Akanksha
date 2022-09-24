@@ -94,7 +94,7 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Hero />
-      <Objectives />      
+      <Objectives />
       <EventInfo
         subheading={<Subheading>Description</Subheading>}
         heading={
@@ -105,9 +105,36 @@ export default () => {
         }
         description={
           <Description>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;India is a country teeming in youth with 70% of people below the age of 40 years. While 34% of India’s Gross National Income is contributed by the youth; there is a dire need to develop this percentage. In fact, the youth today is a major resource for not only development of financial prosperity but for social changes as well. The development of youth leadership is critical to building civic capacity and long term community sustainability. When youth develop such skills, we establish capable, effective leaders for the next generation.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With 34% of India’s Gross National Income is contributed by the youth,
+              there is a dire need for development. Advancement of youth leadership is critical in
+              building civic capacity and long-term community sustainability to establish
+              capable, effective leaders for the future generations.</p>
             <br></br>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Having realized this, "AKANKSHA CHARITABLE TRUST [ACT]" is organizing this momentous event – NATIONAL YOUTH CONFERENCE 2022. The NYC-2022 is a platform to discuss, disseminate and deliberate on the possible plans, targets and solutions which must be generated and implemented by our youth in order to enhance their effective participation and role in nation building. The theme of the convention is “YOUTH & GOOD GOVERNANCE”. With the inculcation of youth empowerment, the youth can reject the status quo and pave a path for a better future. Today the youth is claiming his right to decent living by willing to take risks which helps in the development of leadership skills. To build a better tomorrow, we need to nurture the saplings of today. Hence, a radical government which is pro-people comes from harnessing bright minds, capable of taking the nation into a brighter future.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To achieve <b>Sustainable Development Goals (SDG)</b>, there are several factors
+              which play major role. One among them is good governance. For the betterment of
+              any goal, good governance is the foundation. Sustainable development, including
+              sustained and economic growth, social development, environmental protection,
+              educational development etc. are possible only when the quality of governance is
+              good. By understanding the opportunities and responsibilities, youth can work
+              towards the benefit of the society. So, SDG, youth and good governance must go
+              hand in hand for the progress of any country.</p>
+            <br></br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Having realized this, <b>AKANKSHA CHARITABLE TRUST [ACT]</b> is organizing
+              this momentous event – <strong>NATIONAL YOUTH CONFERENCE 2022</strong> gives an
+              opportunity to all the delegates to work in a team on a problem listed under SDG.
+              The unique solutions and different ideas can be expressed through real time SDG
+              Hackathon. The <b>NYC-2022</b> is a platform to discuss, disseminate and deliberate on
+              the possible plans, targets and solutions which must be generated and implemented
+              by our youth in order to enhance their effective participation and role in nation
+              building. The theme of the convention is <b>“ROLE OF YOUTH IN
+              GOVERNANCE - FOCUS ON ACHIEVING SDGs BY 2030”</b>. With the
+              inculcation of youth empowerment, the youth can reject the status quo and pave a
+              path for a better future. Today the youth is claiming his right to decent living by
+              willing to take risks which helps in the development of leadership skills. To build a
+              better tomorrow, we need to nurture the saplings of today. Hence, a radical
+              government which is pro-people comes from harnessing bright minds, capable of
+              taking the nation into a brighter future.</p>
+
           </Description>
         }
         buttonRounded={false}
