@@ -100,7 +100,7 @@ export default ({
                   />
                 </Heading>
                 <PrimaryButton as="a" rel="noreferrer" target="_blank" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
-                <Description>{description} <span tw="text-indigo-200">31st October, 2022</span></Description>
+                <Description>{description} <span tw="text-indigo-200">8th December, 2022</span></Description>
 
               </TextColumn>
               
