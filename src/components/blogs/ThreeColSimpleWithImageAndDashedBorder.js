@@ -65,12 +65,12 @@ export default ({
     {
       category: "Speaker",
       imageSrc:
-        "https://media-exp1.licdn.com/dms/image/C5603AQFpzMMuko_cpQ/profile-displayphoto-shrink_800_800/0/1607358753324?e=1666224000&v=beta&t=Nkks46zqCJl1adocMn7B5e6F-j_eCsV7FSZDFzpsgA4",
+        "https://raw.githubusercontent.com/SanjayKH-Git/NYC-2022-Akanksha/main/src/images/speakers/Prashant%20Kumar%20Mishra.jpeg",
       author: "Prashant Kumar Mishra,",
       designation: "IAS",
       title: "Managing Director, MESCOM",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://www.linkedin.com/in/mashalti"
+      url: "https://mangalurusmartcity.net/about-mscl"
     },
     {
       category: "Speaker",
