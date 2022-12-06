@@ -66,9 +66,9 @@ export default ({
       category: "Speaker",
       imageSrc:
         "https://media-exp1.licdn.com/dms/image/C5603AQFpzMMuko_cpQ/profile-displayphoto-shrink_800_800/0/1607358753324?e=1666224000&v=beta&t=Nkks46zqCJl1adocMn7B5e6F-j_eCsV7FSZDFzpsgA4",
-      author: "Sri Sudhir Narayana,",
-      designation: "IDAS",
-      title: "Controller(R&D) Ministry of Defense, Govt. of India",
+      author: "Prashant Kumar Mishra,",
+      designation: "IAS",
+      title: "Managing Director, MESCOM",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       url: "https://www.linkedin.com/in/mashalti"
     },
